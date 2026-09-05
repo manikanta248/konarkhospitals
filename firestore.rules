@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // All reads/writes go through the Express API using the Admin SDK (which bypasses
+    // these rules). Client-side Firestore access is denied by default; the client only
+    // uses Firebase Auth (for admin login) and calls the API for everything else.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
