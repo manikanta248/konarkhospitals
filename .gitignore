@@ -15,3 +15,8 @@ serviceAccountKey*.json
 .env*.local
 
 .vercel
+
+# Raw source assets (originals, kept locally for reference only — not needed at runtime,
+# see apps/web public/ for the actual compressed/processed files the site serves).
+konark 01.mp4
+Jade & konark-20260905T131757Z-1-001.zip
