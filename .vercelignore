@@ -1,0 +1,5 @@
+# Raw source assets — large originals kept locally for reference, not needed at runtime.
+# The processed/compressed outputs actually used by the site live under apps/web/public/.
+konark 01.mp4
+Jade & konark-20260905T131757Z-1-001.zip
+apps/web/public/images/doctors/dr-t-rajani-ashok.png

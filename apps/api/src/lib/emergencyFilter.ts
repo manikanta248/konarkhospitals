@@ -32,6 +32,10 @@ const EMERGENCY_PATTERNS = [
   /choking/i,
   /severe burn/i,
   /high fever.*(baby|infant|newborn)/i,
+  // Matches the "This is an emergency" quick-reply chip itself, not just specific symptoms.
+  /this is an emergency/i,
+  /it'?s an emergency/i,
+  /^emergency$/i,
 ];
 
 export function isEmergencyMessage(text: string): boolean {

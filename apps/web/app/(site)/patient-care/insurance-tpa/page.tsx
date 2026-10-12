@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { ProcessSteps } from "@/components/patient-care/ProcessSteps";
 import { ChecklistCard } from "@/components/patient-care/ChecklistCard";
+import { InsurerLogos } from "@/components/patient-care/InsurerLogos";
 import { HOSPITAL } from "@konark/shared";
 
 export const metadata: Metadata = {
@@ -55,6 +56,17 @@ export default function InsuranceTpaPage() {
             </a>
           </div>
         </aside>
+      </Container>
+
+      <Container className="pb-10 sm:pb-12">
+        <h2 className="font-display text-lg font-bold text-ink-950">Insurance & TPA Partners We Work With</h2>
+        <p className="mt-2 max-w-2xl text-[14px] leading-relaxed text-ink-600">
+          We coordinate cashless treatment with the following insurers and third-party administrators. Don't see
+          yours listed? Call our billing desk — we regularly work with insurers beyond this list too.
+        </p>
+        <div className="mt-6">
+          <InsurerLogos />
+        </div>
       </Container>
 
       <Container className="pb-14 sm:pb-16">

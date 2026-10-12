@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, ClipboardList, FileText, Landmark, LogIn, Stethoscope } from "lucide-react";
+import { Ambulance, ArrowUpRight, ClipboardList, FileText, Landmark, LogIn, Stethoscope } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Container } from "@/components/ui/Container";
 
@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const links = [
+  { href: "/emergency-care", icon: Ambulance, title: "Emergency Care", description: "24/7 immediate medical attention for urgent and critical medical conditions." },
   { href: "/patient-care/insurance-tpa", icon: Landmark, title: "Insurance & TPA", description: "Cashless treatment coordination with your insurance provider or TPA." },
   { href: "/patient-care/medical-records", icon: FileText, title: "Medical Records", description: "Request copies of your reports, discharge summaries and prescriptions." },
   { href: "/patient-care/patient-guide", icon: ClipboardList, title: "Patient Guide", description: "What to expect and what to bring for your OPD visit or inpatient stay." },

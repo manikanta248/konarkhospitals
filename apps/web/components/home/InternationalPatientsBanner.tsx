@@ -20,7 +20,7 @@ export function InternationalPatientsBanner() {
             <div>
               <h2 className="font-display text-lg font-bold text-ink-950">Travelling to Hyderabad for Treatment?</h2>
               <p className="mt-1.5 max-w-xl text-[13.5px] leading-relaxed text-ink-600">
-                We help international patients plan their visit end-to-end — from your first enquiry to
+                We help international patients plan their visit end-to-end, from your first enquiry to
                 follow-up care after you return home.
               </p>
               <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5">

@@ -2,7 +2,9 @@
 
 import { MessageCircle, X } from "lucide-react";
 
-export function ChatBubble({ open, onClick }: { open: boolean; onClick: () => void }) {
+export function ChatBubble({ open, hidden, onClick }: { open: boolean; hidden?: boolean; onClick: () => void }) {
+  if (hidden) return null;
+
   return (
     <button
       type="button"

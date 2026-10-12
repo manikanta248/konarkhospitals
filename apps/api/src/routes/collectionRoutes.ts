@@ -13,6 +13,20 @@ export function createCollectionRouter(collectionName: string, options?: { publi
     try {
       let ref: FirebaseFirestore.Query = db.collection(collectionName);
       if (options?.publicFilter) ref = options.publicFilter(ref);
+
+      // Opt-in cursor pagination for large/growing collections — pass ?limit= to enable.
+      // Collections without a limit keep the original full-list response for compatibility.
+      const limitParam = req.query.limit ? parseInt(String(req.query.limit), 10) : undefined;
+      if (limitParam && Number.isFinite(limitParam) && limitParam > 0) {
+        let pageRef = ref.orderBy("createdAt", "desc").limit(limitParam);
+        if (req.query.cursor) pageRef = pageRef.startAfter(String(req.query.cursor));
+        const snap = await pageRef.get();
+        const items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+        const last = snap.docs[snap.docs.length - 1];
+        const nextCursor = snap.docs.length === limitParam && last ? last.get("createdAt") ?? null : null;
+        return res.json({ items, nextCursor });
+      }
+
       const snap = await ref.get();
       const items = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
       res.json({ items });

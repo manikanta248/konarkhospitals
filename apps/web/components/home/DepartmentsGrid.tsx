@@ -10,8 +10,8 @@ export function DepartmentsGrid({ departments, total }: { departments: Departmen
       <Container>
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600">Specialities</p>
-            <h2 className="mt-2 font-display text-2xl font-bold text-ink-950 sm:text-3xl">Medical Services We Offer</h2>
+            <p className="text-xs font-semibold uppercase tracking-wider text-brand-600">Medical Services</p>
+            <h2 className="mt-2 font-display text-2xl font-bold text-ink-950 sm:text-3xl">Our Specialities</h2>
           </div>
           <p className="max-w-sm text-sm text-ink-500">
             {total}+ specialities backed by dedicated consultants, diagnostics and dedicated care.

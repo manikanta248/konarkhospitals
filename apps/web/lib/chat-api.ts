@@ -1,4 +1,6 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
+// The backend now lives in this same Next.js app (app/api/**), so requests are same-origin —
+// no base URL needed.
+const API_BASE = "";
 
 export interface StreamHandlers {
   onToken: (text: string) => void;

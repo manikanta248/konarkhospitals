@@ -6,8 +6,9 @@ import { DoctorsDirectory } from "@/components/doctors/DoctorsDirectory";
 import { getDepartments, getDoctors } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Find a Doctor",
-  description: "Search Konark Hospitals' specialists by name or department and book a consultation.",
+  title: "Find a Doctor in Hyderabad",
+  description: "Search Konark Hospitals' specialists in Jeedimetla, Hyderabad by name or department and book a consultation online.",
+  alternates: { canonical: "/doctors" },
 };
 
 export default async function DoctorsPage() {

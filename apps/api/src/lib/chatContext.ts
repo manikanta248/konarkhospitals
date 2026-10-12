@@ -7,7 +7,7 @@ const HOSPITAL_FACTS = `
 Hospital: Konark Hospitals — Best Multispeciality Hospital in Hyderabad | Fertility, IVF & IUI Specialists
 Address: #13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055
 Phone: +91 40 3526 1515 | Mobile: +91 98496 61515 | Emergency (24/7): +91 98496 61515
-Email: konark.reception@gmail.com
+Email: reception@konarkhospitals.com
 OPD Hours: 10:00 AM - 3:00 PM & 6:00 PM - 8:00 PM (Emergency department is open 24/7)
 WhatsApp: https://wa.me/919849661515
 `.trim();

@@ -1,0 +1,166 @@
+- generic [active] [ref=f16e1]:
+  - banner [ref=f16e2]:
+    - generic [ref=f16e4]:
+      - link [ref=f16e5] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f16e6]
+      - button "Open menu" [ref=f16e8] [cursor=pointer]
+    - generic [ref=f16e10]:
+      - generic [ref=f16e11]:
+        - link [ref=f16e12] [cursor=pointer]:
+          - /url: /
+          - img "Konark Hospitals" [ref=f16e13]
+        - button "Close menu" [ref=f16e14] [cursor=pointer]
+      - generic [ref=f16e18]:
+        - generic [ref=f16e19]:
+          - button "Medical Services" [ref=f16e20] [cursor=pointer]
+          - list [ref=f16e23]:
+            - listitem [ref=f16e24]:
+              - link "Cardiology" [ref=f16e25] [cursor=pointer]:
+                - /url: /services/cardiology
+            - listitem [ref=f16e26]:
+              - link "Neurology" [ref=f16e27] [cursor=pointer]:
+                - /url: /services/neurology
+            - listitem [ref=f16e28]:
+              - link "Orthopaedics" [ref=f16e29] [cursor=pointer]:
+                - /url: /services/orthopaedics
+            - listitem [ref=f16e30]:
+              - link "Fertility & IVF" [ref=f16e31] [cursor=pointer]:
+                - /url: /services/fertility-ivf
+            - listitem [ref=f16e32]:
+              - link "Gynecology" [ref=f16e33] [cursor=pointer]:
+                - /url: /services/gynecology
+            - listitem [ref=f16e34]:
+              - link "Paediatrics" [ref=f16e35] [cursor=pointer]:
+                - /url: /services/paediatrics
+            - listitem [ref=f16e36]:
+              - link "Urology" [ref=f16e37] [cursor=pointer]:
+                - /url: /services/urology
+            - listitem [ref=f16e38]:
+              - link "Pulmonology" [ref=f16e39] [cursor=pointer]:
+                - /url: /services/pulmonology
+            - listitem [ref=f16e40]:
+              - link "General Medicine" [ref=f16e41] [cursor=pointer]:
+                - /url: /services/general-medicine
+            - listitem [ref=f16e42]:
+              - link "Plastic Surgery & Cosmetology" [ref=f16e43] [cursor=pointer]:
+                - /url: /services/plastic-surgery-cosmetology
+            - listitem [ref=f16e44]:
+              - link "ENT" [ref=f16e45] [cursor=pointer]:
+                - /url: /services/ent
+            - listitem [ref=f16e46]:
+              - link "Physiotherapy" [ref=f16e47] [cursor=pointer]:
+                - /url: /services/physiotherapy
+            - listitem [ref=f16e48]:
+              - link "Vascular & Endovascular Surgery" [ref=f16e49] [cursor=pointer]:
+                - /url: /services/vascular-surgery
+        - button "Doctors" [ref=f16e51] [cursor=pointer]
+        - button "Patient Care" [ref=f16e55] [cursor=pointer]
+        - button "About" [ref=f16e59] [cursor=pointer]
+        - button "Resources" [ref=f16e63] [cursor=pointer]
+        - generic [ref=f16e66]:
+          - link "Careers" [ref=f16e67] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f16e68] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f16e69] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+      - link "Call +91 40 3526 1515" [ref=f16e71] [cursor=pointer]:
+        - /url: tel:+914035261515
+  - main [ref=f16e74]:
+    - generic [ref=f16e76]:
+      - img "Dr. T. Rajani Ashok" [ref=f16e78]
+      - generic [ref=f16e79]:
+        - generic [ref=f16e80]: Fertility & IVF
+        - heading "Dr. T. Rajani Ashok" [level=1] [ref=f16e81]
+        - paragraph [ref=f16e82]: Senior Fertility Specialist
+        - generic [ref=f16e83]:
+          - generic [ref=f16e84]:
+            - term [ref=f16e85]: Qualifications
+            - definition [ref=f16e89]: MD (Obs & Gynae)
+          - generic [ref=f16e90]:
+            - term [ref=f16e91]: Specialization
+            - definition [ref=f16e96]: Fertility, IVF & High-risk Obstetrics
+          - generic [ref=f16e97]:
+            - term [ref=f16e98]: Experience
+            - definition [ref=f16e103]: 30+ years
+          - generic [ref=f16e104]:
+            - term [ref=f16e105]: Languages
+            - definition [ref=f16e111]: English, Telugu, Hindi
+        - generic [ref=f16e112]:
+          - link "Book Consultation" [ref=f16e113] [cursor=pointer]:
+            - /url: /book-appointment?doctor=dr-t-rajani-ashok
+          - link "Ask a Question" [ref=f16e114] [cursor=pointer]:
+            - /url: /contact
+    - generic [ref=f16e115]:
+      - generic [ref=f16e116]:
+        - heading "About Dr. T. Rajani Ashok" [level=2] [ref=f16e117]
+        - paragraph [ref=f16e118]: Dr. T. Rajani Ashok brings close to three decades of experience in obstetrics, gynaecology and fertility care, and has led some of Konark Hospitals' most complex deliveries and fertility treatments.
+      - complementary [ref=f16e119]:
+        - heading "OPD Availability" [level=3] [ref=f16e120]
+        - list [ref=f16e121]:
+          - listitem [ref=f16e122]:
+            - generic [ref=f16e123]: Mon - Sat
+            - generic [ref=f16e124]: 11:00 AM - 3:00 PM
+          - listitem [ref=f16e125]:
+            - generic [ref=f16e126]: Mon - Sat
+            - generic [ref=f16e127]: 6:00 PM - 9:00 PM
+        - paragraph [ref=f16e128]: Timings may vary — please book ahead to confirm availability.
+  - contentinfo [ref=f16e129]:
+    - generic [ref=f16e130]:
+      - generic [ref=f16e131]:
+        - generic [ref=f16e132]:
+          - link [ref=f16e133] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f16e134]
+          - paragraph [ref=f16e135]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f16e136] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f16e140]:
+          - heading "Quick Links" [level=4] [ref=f16e141]
+          - list [ref=f16e142]:
+            - listitem [ref=f16e143]:
+              - link "Medical Services" [ref=f16e144] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f16e145]:
+              - link "Find a Doctor" [ref=f16e146] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f16e147]:
+              - link "Patient Care" [ref=f16e148] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f16e149]:
+              - link "About Us" [ref=f16e150] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f16e151]:
+              - link "Careers" [ref=f16e152] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f16e153]:
+              - link "Contact Us" [ref=f16e154] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f16e155]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f16e156]:
+          - heading "Get in Touch" [level=4] [ref=f16e157]
+          - generic [ref=f16e158]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f16e159] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f16e164] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f16e165]
+          - generic [ref=f16e166]:
+            - link "+91 40 3526 1515" [ref=f16e167] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f16e171] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f16e176]:
+        - paragraph [ref=f16e177]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f16e178]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - generic [ref=f16e179]:
+    - link "Call" [ref=f16e180] [cursor=pointer]:
+      - /url: tel:+914035261515
+    - link "WhatsApp" [ref=f16e184] [cursor=pointer]:
+      - /url: https://wa.me/919849661515
+    - link "Book Now" [ref=f16e188] [cursor=pointer]:
+      - /url: /book-appointment
+  - alert [ref=f16e192]
+  - button "Frequently asked questions" [ref=f16e193] [cursor=pointer]: FAQs
+  - button "Chat with Konark Hospitals" [ref=f16e197] [cursor=pointer]

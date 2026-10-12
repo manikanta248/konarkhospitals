@@ -35,8 +35,8 @@ export function Header() {
       <div
         className={`bg-white/95 backdrop-blur transition-shadow ${scrolled ? "shadow-[0_1px_0_0_rgba(16,24,32,0.08),0_4px_16px_-4px_rgba(16,24,32,0.08)]" : "border-b border-ink-100"}`}
       >
-        <div className="mx-auto flex h-20 w-full max-w-container items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Logo />
+        <div className="mx-auto flex h-24 w-full max-w-container items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Logo className="h-[92px] w-auto object-contain" />
 
           <nav className="hidden items-center lg:flex" onMouseLeave={() => setOpenGroup(null)}>
             {NAV.map((group) => (

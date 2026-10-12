@@ -7,12 +7,20 @@ import { DepartmentImage } from "@/components/ui/DepartmentImage";
 import { DoctorCard } from "@/components/doctors/DoctorCard";
 import { FaqAccordion } from "@/components/services/FaqAccordion";
 import { CtaBanner } from "@/components/home/CtaBanner";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { DEPARTMENT_SEO, SITE_URL } from "@/lib/seo-keywords";
 import { getDepartment, getDepartments, getDoctors } from "@/lib/content";
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const department = await getDepartment(params.slug);
   if (!department) return {};
-  return { title: department.name, description: department.shortDescription };
+  const seo = DEPARTMENT_SEO[params.slug];
+  return {
+    title: seo?.title ?? department.name,
+    description: seo?.description ?? department.shortDescription,
+    keywords: seo?.keywords,
+    alternates: { canonical: `/services/${params.slug}` },
+  };
 }
 
 export async function generateStaticParams() {
@@ -26,8 +34,33 @@ export default async function DepartmentPage({ params }: { params: { slug: strin
 
   const doctors = allDoctors.filter((d) => d.departmentSlug === department.slug);
 
+  const departmentJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: department.name,
+    url: `${SITE_URL}/services/${department.slug}`,
+    description: department.shortDescription,
+    about: { "@type": "MedicalSpecialty", name: department.name },
+    isPartOf: { "@type": "Hospital", name: "Konark Hospitals", url: SITE_URL },
+  };
+
+  const faqJsonLd =
+    department.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: department.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }
+      : null;
+
   return (
     <>
+      <JsonLd data={departmentJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <div className="border-b border-ink-100 bg-gradient-to-b from-brand-50/60 to-white py-10 sm:py-12">
         <Container className="grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-12">
           <div>

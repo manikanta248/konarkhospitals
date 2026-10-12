@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Ambulance, Clock, Navigation, PhoneCall, ShieldAlert, Stethoscope } from "lucide-react";
+import { Ambulance, Baby, Brain, Clock, HeartPulse, Navigation, PhoneCall, ShieldAlert, ShieldPlus, Stethoscope, Users, Wind } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
+import { ProcessSteps } from "@/components/patient-care/ProcessSteps";
 import { HOSPITAL } from "@konark/shared";
 
 export const metadata: Metadata = {
@@ -13,6 +14,39 @@ const points = [
   { icon: Clock, title: "Open 24/7", description: "Our emergency department is staffed around the clock, every day of the year." },
   { icon: Stethoscope, title: "Rapid Triage", description: "Patients are assessed immediately on arrival and prioritised by medical urgency." },
   { icon: Ambulance, title: "Critical Care Ready", description: "Direct coordination with our ICU and specialist teams for critical cases." },
+];
+
+const emergencyProcess = [
+  {
+    title: "Arrival at Emergency",
+    description: "Patient is received immediately by the emergency team. Rapid assessment begins based on the patient's condition.",
+  },
+  {
+    title: "Initial Assessment",
+    description: "Vital signs and immediate symptoms are assessed. The emergency team determines the urgency and required treatment.",
+  },
+  {
+    title: "Stabilisation & Treatment",
+    description: "Immediate medical care is provided to stabilise the patient. Necessary investigations and emergency procedures are initiated.",
+  },
+  {
+    title: "Specialist Consultation",
+    description: "Relevant specialists are involved based on the patient's condition. Multispeciality support is available when required.",
+  },
+  {
+    title: "Further Care",
+    description: "After stabilisation, the patient may be shifted to the ward, ICU or referred for specialised treatment as required.",
+  },
+];
+
+const emergencyServices = [
+  { icon: Ambulance, label: "Accident & Trauma Care" },
+  { icon: HeartPulse, label: "Cardiac Emergencies" },
+  { icon: Brain, label: "Stroke & Neurological Emergencies" },
+  { icon: Wind, label: "Respiratory Emergencies" },
+  { icon: Baby, label: "Obstetric & Gynaecological Emergencies" },
+  { icon: Users, label: "Paediatric Emergencies" },
+  { icon: ShieldPlus, label: "Critical Care & Stabilisation" },
 ];
 
 export default function EmergencyCarePage() {
@@ -66,6 +100,27 @@ export default function EmergencyCarePage() {
             <ButtonLink href={HOSPITAL.mapsUrl} external icon={<Navigation size={16} />}>
               Get Directions to Konark Hospitals
             </ButtonLink>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="font-display text-lg font-bold text-ink-950">Emergency Process</h2>
+          <div className="mt-6 max-w-2xl">
+            <ProcessSteps steps={emergencyProcess} />
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="font-display text-lg font-bold text-ink-950">Emergency Services</h2>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {emergencyServices.map(({ icon: Icon, label }) => (
+              <div key={label} className="flex items-center gap-3 rounded-xl2 border border-ink-100 p-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-600">
+                  <Icon size={18} />
+                </span>
+                <p className="text-[14px] font-medium text-ink-800">{label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </Container>

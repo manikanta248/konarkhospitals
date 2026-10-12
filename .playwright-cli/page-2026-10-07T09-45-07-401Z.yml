@@ -1,0 +1,378 @@
+- generic [active] [ref=f18e1]:
+  - banner [ref=f18e2]:
+    - generic [ref=f18e4]:
+      - generic [ref=f18e5]:
+        - generic [ref=f18e6]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f18e10]: reception@konarkhospitals.com
+      - generic [ref=f18e14]:
+        - navigation [ref=f18e15]:
+          - link "Careers" [ref=f18e16] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f18e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f18e18] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+        - 'link "Emergency: +91 98496 61515" [ref=f18e19] [cursor=pointer]':
+          - /url: tel:+919849661515
+    - generic [ref=f18e21]:
+      - link [ref=f18e22] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f18e23]
+      - navigation [ref=f18e24]:
+        - link "Medical Services" [ref=f18e26] [cursor=pointer]:
+          - /url: /services
+        - link "Doctors" [ref=f18e30] [cursor=pointer]:
+          - /url: /doctors
+        - link "Patient Care" [ref=f18e34] [cursor=pointer]:
+          - /url: /patient-care
+        - link "About" [ref=f18e38] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=f18e42] [cursor=pointer]:
+          - /url: /resources/article
+      - generic [ref=f18e45]:
+        - link "+91 40 3526 1515" [ref=f18e46] [cursor=pointer]:
+          - /url: tel:+914035261515
+        - link "Book Appointment" [ref=f18e49] [cursor=pointer]:
+          - /url: /book-appointment
+  - main [ref=f18e50]:
+    - generic [ref=f18e54]:
+      - generic [ref=f18e55]:
+        - generic [ref=f18e56]: Multispeciality Hospital · Jeedimetla, Hyderabad
+        - heading "Passion meets compassion. Care built around every patient." [level=1] [ref=f18e60]
+        - paragraph [ref=f18e61]: From high-risk deliveries and advanced fertility treatment to cardiac care, trauma surgery and paediatrics, Konark Hospitals brings specialist expertise, modern infrastructure and 24/7 emergency response under one roof.
+        - generic [ref=f18e62]:
+          - link "Book an Appointment" [ref=f18e63] [cursor=pointer]:
+            - /url: /book-appointment
+          - generic [ref=f18e66]:
+            - link "Emergency Care" [ref=f18e67] [cursor=pointer]:
+              - /url: /emergency-care
+            - link "Contact Us" [ref=f18e72] [cursor=pointer]:
+              - /url: /contact
+        - paragraph [ref=f18e75]: "OPD Timings: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f18e79]:
+          - generic [ref=f18e80]:
+            - term [ref=f18e81]: Specialities
+            - definition [ref=f18e82]: 12+
+            - definition [ref=f18e83]: Specialities
+          - generic [ref=f18e84]:
+            - term [ref=f18e85]: Decades of fertility expertise
+            - definition [ref=f18e86]: 3+
+            - definition [ref=f18e87]: Decades of Fertility Expertise
+          - generic [ref=f18e88]:
+            - term [ref=f18e89]: Emergency care
+            - definition [ref=f18e90]: 24/7
+            - definition [ref=f18e91]: Emergency Care
+      - generic [ref=f18e93]:
+        - heading "Request a Call Back" [level=2] [ref=f18e94]
+        - paragraph [ref=f18e95]: We'll get back to you shortly.
+        - generic [ref=f18e96]:
+          - textbox "Your name" [ref=f18e97]
+          - textbox "Enter a valid 10-digit mobile number" [ref=f18e99]:
+            - /placeholder: 10-digit mobile number
+          - textbox "How can we help?" [ref=f18e100]
+          - button "Send" [ref=f18e101] [cursor=pointer]
+    - generic [ref=f18e107]:
+      - link "Book Appointment" [ref=f18e108] [cursor=pointer]:
+        - /url: /book-appointment
+      - link "Emergency Care" [ref=f18e115] [cursor=pointer]:
+        - /url: /emergency-care
+      - link "Find a Doctor" [ref=f18e123] [cursor=pointer]:
+        - /url: /doctors
+      - link "Health Packages" [ref=f18e129] [cursor=pointer]:
+        - /url: /health-packages
+    - generic [ref=f18e136]:
+      - generic [ref=f18e137]:
+        - heading "Trusted by Thousands of Families in Hyderabad" [level=2] [ref=f18e138]
+        - paragraph [ref=f18e139]: Since 2009
+      - generic [ref=f18e140]:
+        - generic [ref=f18e141]:
+          - paragraph [ref=f18e145]: 15+
+          - paragraph [ref=f18e146]: Years of Healthcare Excellence
+        - generic [ref=f18e147]:
+          - paragraph [ref=f18e153]: 50,000+
+          - paragraph [ref=f18e154]: Patients Treated
+        - generic [ref=f18e155]:
+          - paragraph [ref=f18e158]: 10,000+
+          - paragraph [ref=f18e159]: Successful Surgeries
+        - generic [ref=f18e160]:
+          - paragraph [ref=f18e165]: 13+
+          - paragraph [ref=f18e166]: Expert Consultants
+        - generic [ref=f18e167]:
+          - paragraph [ref=f18e173]: 12+
+          - paragraph [ref=f18e174]: Medical Specialities
+        - generic [ref=f18e175]:
+          - paragraph [ref=f18e181]: 24/7
+          - paragraph [ref=f18e182]: Emergency Care
+        - generic [ref=f18e183]:
+          - paragraph [ref=f18e187]: 3+
+          - paragraph [ref=f18e188]: Decades of Fertility Expertise
+        - generic [ref=f18e189]:
+          - paragraph [ref=f18e192]: 1,000+
+          - paragraph [ref=f18e193]: Successful IVF Treatments
+        - generic [ref=f18e194]:
+          - paragraph [ref=f18e198]: 5,000+
+          - paragraph [ref=f18e199]: Successful Deliveries
+    - generic [ref=f18e201]:
+      - generic [ref=f18e202]:
+        - generic [ref=f18e203]: 24/7 Emergency Care
+        - generic [ref=f18e210]: 12+ Medical Specialities
+        - generic [ref=f18e216]: 13+ Expert Consultants
+        - generic [ref=f18e223]: Advanced Fertility & IVF Care
+        - generic [ref=f18e228]: Insurance & TPA Cashless Support
+        - generic [ref=f18e233]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f18e238]: Jeedimetla, Hyderabad
+      - generic [aria-hidden] [ref=f18e243]:
+        - generic [ref=f18e244]: 24/7 Emergency Care
+        - generic [ref=f18e251]: 12+ Medical Specialities
+        - generic [ref=f18e257]: 13+ Expert Consultants
+        - generic [ref=f18e264]: Advanced Fertility & IVF Care
+        - generic [ref=f18e269]: Insurance & TPA Cashless Support
+        - generic [ref=f18e274]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f18e279]: Jeedimetla, Hyderabad
+    - generic [ref=f18e285]:
+      - generic [ref=f18e286]:
+        - generic [ref=f18e287]:
+          - paragraph [ref=f18e288]: Medical Services
+          - heading "Our Specialities" [level=2] [ref=f18e289]
+        - paragraph [ref=f18e290]: 13+ specialities backed by dedicated consultants, diagnostics and dedicated care.
+      - generic [ref=f18e291]:
+        - link [ref=f18e292] [cursor=pointer]:
+          - /url: /services/fertility-ivf
+          - generic [ref=f18e293]:
+            - heading "Fertility & IVF" [level=3] [ref=f18e295]
+            - paragraph [ref=f18e296]: Advanced fertility treatments including IVF and IUI by our most experienced specialist.
+          - generic [ref=f18e297]: Learn more
+        - link [ref=f18e301] [cursor=pointer]:
+          - /url: /services/gynecology
+          - generic [ref=f18e302]:
+            - heading "Gynecology & Obstetrics" [level=3] [ref=f18e304]
+            - paragraph [ref=f18e305]: Complete women's health care from pregnancy through every life stage.
+          - generic [ref=f18e306]: Learn more
+        - link [ref=f18e310] [cursor=pointer]:
+          - /url: /services/paediatrics
+          - generic [ref=f18e311]:
+            - heading "Paediatrics & Neonatology" [level=3] [ref=f18e313]
+            - paragraph [ref=f18e314]: Specialised care for newborns, infants and children.
+          - generic [ref=f18e315]: Learn more
+        - link "General Medicine OPD Only Outpatient consultation and management of everyday illness and chronic conditions. Learn more" [ref=f18e319] [cursor=pointer]:
+          - /url: /services/general-medicine
+          - generic [ref=f18e320]:
+            - generic [ref=f18e321]:
+              - heading "General Medicine" [level=3] [ref=f18e322]
+              - generic [ref=f18e323]: OPD Only
+            - paragraph [ref=f18e324]: Outpatient consultation and management of everyday illness and chronic conditions.
+          - generic [ref=f18e325]: Learn more
+        - link [ref=f18e329] [cursor=pointer]:
+          - /url: /services/urology
+          - generic [ref=f18e330]:
+            - heading "Urology" [level=3] [ref=f18e332]
+            - paragraph [ref=f18e333]: Diagnosis and treatment of urinary tract and male reproductive conditions.
+          - generic [ref=f18e334]: Learn more
+        - link [ref=f18e338] [cursor=pointer]:
+          - /url: /services/orthopaedics
+          - generic [ref=f18e339]:
+            - heading "Orthopaedics" [level=3] [ref=f18e341]
+            - paragraph [ref=f18e342]: Trauma care, joint replacement and sports injury treatment by experienced surgeons.
+          - generic [ref=f18e343]: Learn more
+        - link "Cardiology OPD Only Comprehensive heart care from diagnostics to advanced cardiac procedures. Learn more" [ref=f18e347] [cursor=pointer]:
+          - /url: /services/cardiology
+          - generic [ref=f18e348]:
+            - generic [ref=f18e349]:
+              - heading "Cardiology" [level=3] [ref=f18e350]
+              - generic [ref=f18e351]: OPD Only
+            - paragraph [ref=f18e352]: Comprehensive heart care from diagnostics to advanced cardiac procedures.
+          - generic [ref=f18e353]: Learn more
+        - link "Neurology OPD Only Expert diagnosis and treatment for disorders of the brain, spine and nervous system. Learn more" [ref=f18e357] [cursor=pointer]:
+          - /url: /services/neurology
+          - generic [ref=f18e358]:
+            - generic [ref=f18e359]:
+              - heading "Neurology" [level=3] [ref=f18e360]
+              - generic [ref=f18e361]: OPD Only
+            - paragraph [ref=f18e362]: Expert diagnosis and treatment for disorders of the brain, spine and nervous system.
+          - generic [ref=f18e363]: Learn more
+      - link "View All Specialities" [ref=f18e368] [cursor=pointer]:
+        - /url: /services
+    - generic [ref=f18e370]:
+      - img "Operation theatre at Konark Hospitals" [ref=f18e372]
+      - generic [ref=f18e373]:
+        - paragraph [ref=f18e374]: Why Konark
+        - heading "World-class healthcare, within reach of all." [level=2] [ref=f18e375]
+        - generic [ref=f18e376]:
+          - generic [ref=f18e377]:
+            - heading "Unmatched Expertise" [level=3] [ref=f18e383]
+            - paragraph [ref=f18e384]: Carefully selected specialists across 12+ disciplines, from fertility to trauma surgery.
+          - generic [ref=f18e385]:
+            - heading "Complete Infrastructure" [level=3] [ref=f18e391]
+            - paragraph [ref=f18e392]: Modern diagnostics, operation theatres and inpatient facilities under one roof.
+          - generic [ref=f18e393]:
+            - heading "360° Patient-Centric Care" [level=3] [ref=f18e400]
+            - paragraph [ref=f18e401]: Coordinated care across consultation, admission, treatment and follow-up.
+          - generic [ref=f18e402]:
+            - heading "Easy Affordability" [level=3] [ref=f18e407]
+            - paragraph [ref=f18e408]: Transparent pricing and insurance/TPA support to keep quality care within reach.
+    - generic [ref=f18e410]:
+      - generic [ref=f18e411]:
+        - generic [ref=f18e412]:
+          - paragraph [ref=f18e413]: Our Team
+          - heading "Meet Our Specialists" [level=2] [ref=f18e414]
+        - link "View all doctors" [ref=f18e415] [cursor=pointer]:
+          - /url: /doctors
+      - generic [ref=f18e416]:
+        - link [ref=f18e417] [cursor=pointer]:
+          - /url: /doctors/dr-t-rajani-ashok
+          - img "Dr. T. Rajani Ashok" [ref=f18e419]
+          - generic [ref=f18e420]:
+            - paragraph [ref=f18e421]: Dr. T. Rajani Ashok
+            - paragraph [ref=f18e422]: Senior Fertility Specialist
+            - paragraph [ref=f18e423]: 30+ years · Fertility & IVF
+        - link [ref=f18e424] [cursor=pointer]:
+          - /url: /doctors/dr-deepak
+          - img "Dr. Deepak" [ref=f18e426]
+          - generic [ref=f18e427]:
+            - paragraph [ref=f18e428]: Dr. Deepak
+            - paragraph [ref=f18e429]: Urologist & Andrologist
+            - paragraph [ref=f18e430]: 10+ years · Urology
+        - link [ref=f18e431] [cursor=pointer]:
+          - /url: /doctors/dr-p-ramesh
+          - img "Dr. P. Ramesh" [ref=f18e433]
+          - generic [ref=f18e434]:
+            - paragraph [ref=f18e435]: Dr. P. Ramesh
+            - paragraph [ref=f18e436]: Plastic & Reconstructive Surgeon
+            - paragraph [ref=f18e437]: 15+ years · Plastic Surgery & Cosmetology
+        - link "SH Dr. Shashikanth ENT Surgeon 13+ years · ENT" [ref=f18e438] [cursor=pointer]:
+          - /url: /doctors/dr-shashikanth
+          - generic [ref=f18e439]: SH
+          - generic [ref=f18e443]:
+            - paragraph [ref=f18e444]: Dr. Shashikanth
+            - paragraph [ref=f18e445]: ENT Surgeon
+            - paragraph [ref=f18e446]: 13+ years · ENT
+        - link "VR Dr. Venkat Ram Reddy Orthopaedic Surgeon 0+ years · Orthopaedics" [ref=f18e447] [cursor=pointer]:
+          - /url: /doctors/dr-venkat-ram-reddy
+          - generic [ref=f18e448]: VR
+          - generic [ref=f18e452]:
+            - paragraph [ref=f18e453]: Dr. Venkat Ram Reddy
+            - paragraph [ref=f18e454]: Orthopaedic Surgeon
+            - paragraph [ref=f18e455]: 0+ years · Orthopaedics
+    - generic [ref=f18e458]:
+      - generic [ref=f18e466]:
+        - heading "Travelling to Hyderabad for Treatment?" [level=2] [ref=f18e467]
+        - paragraph [ref=f18e468]: We help international patients plan their visit end-to-end, from your first enquiry to follow-up care after you return home.
+        - list [ref=f18e469]:
+          - listitem [ref=f18e470]: Treatment plan & cost estimate before you travel
+          - listitem [ref=f18e474]: Coordinated appointment scheduling
+          - listitem [ref=f18e477]: English & Hindi language support
+      - link "Learn More" [ref=f18e482] [cursor=pointer]:
+        - /url: /international-patients
+    - generic [ref=f18e484]:
+      - paragraph [ref=f18e485]: Patient Stories
+      - heading "What Our Patients Say" [level=2] [ref=f18e486]
+      - generic [ref=f18e487]:
+        - figure "RK Ravi Kumar" [ref=f18e488]:
+          - blockquote [ref=f18e500]: “Excellent orthopaedic care after my accident — the surgery and physiotherapy team got me walking again.”
+          - generic [ref=f18e501]:
+            - generic [ref=f18e502]: RK
+            - generic [ref=f18e503]: Ravi Kumar
+        - figure "FB Fathima Begum" [ref=f18e504]:
+          - blockquote [ref=f18e516]: “Our IVF journey finally succeeded thanks to Dr. Rajani Ashok and her team's patience and expertise.”
+          - generic [ref=f18e517]:
+            - generic [ref=f18e518]: FB
+            - generic [ref=f18e519]: Fathima Begum
+        - figure "SR Srinivas Rao" [ref=f18e520]:
+          - blockquote [ref=f18e532]: “Prompt emergency response and attentive cardiac care — couldn't have asked for better treatment for my father.”
+          - generic [ref=f18e533]:
+            - generic [ref=f18e534]: SR
+            - generic [ref=f18e535]: Srinivas Rao
+    - generic [ref=f18e537]:
+      - paragraph [ref=f18e538]: Patient Stories
+      - heading "Hear From Our Patients" [level=2] [ref=f18e539]
+      - generic [ref=f18e540]:
+        - button "Play patient testimonial video" [ref=f18e541] [cursor=pointer]
+        - button "Play patient testimonial video" [ref=f18e547] [cursor=pointer]
+        - button "Play patient testimonial video" [ref=f18e553] [cursor=pointer]
+    - generic [ref=f18e560]:
+      - generic [ref=f18e561]:
+        - paragraph [ref=f18e562]: Get in Touch
+        - heading "Have a question? Send us a message." [level=2] [ref=f18e563]
+        - paragraph [ref=f18e564]: Our team typically responds within a few hours. For anything urgent, call us or visit our Locations page for directions.
+        - generic [ref=f18e565]:
+          - paragraph [ref=f18e570]: "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055"
+          - link "+91 40 3526 1515" [ref=f18e571] [cursor=pointer]:
+            - /url: tel:+914035261515
+          - link "reception@konarkhospitals.com" [ref=f18e574] [cursor=pointer]:
+            - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f18e579]:
+        - generic [ref=f18e580]:
+          - generic [ref=f18e581]:
+            - generic [ref=f18e582]: Full Name *
+            - textbox "Your name" [ref=f18e583]
+          - generic [ref=f18e584]:
+            - generic [ref=f18e585]: Phone Number *
+            - textbox "Enter a valid 10-digit mobile number" [ref=f18e587]:
+              - /placeholder: 10-digit mobile number
+        - generic [ref=f18e588]:
+          - generic [ref=f18e589]: Email
+          - textbox "you@example.com" [ref=f18e590]
+        - generic [ref=f18e591]:
+          - generic [ref=f18e592]: Subject
+          - textbox "What is this regarding?" [ref=f18e593]
+        - generic [ref=f18e594]:
+          - generic [ref=f18e595]: Message *
+          - textbox "How can we help?" [ref=f18e596]
+        - button "Send Message" [ref=f18e597] [cursor=pointer]
+    - generic [ref=f18e601]:
+      - generic [ref=f18e602]:
+        - heading "Need to see a specialist?" [level=2] [ref=f18e603]
+        - paragraph [ref=f18e604]: Book an appointment online or call us directly. Our care coordinators will help you find the right doctor.
+      - generic [ref=f18e605]:
+        - link "Book Appointment" [ref=f18e606] [cursor=pointer]:
+          - /url: /book-appointment
+        - link "+91 40 3526 1515" [ref=f18e609] [cursor=pointer]:
+          - /url: tel:+914035261515
+  - contentinfo [ref=f18e614]:
+    - generic [ref=f18e615]:
+      - generic [ref=f18e616]:
+        - generic [ref=f18e617]:
+          - link [ref=f18e618] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f18e619]
+          - paragraph [ref=f18e620]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f18e621] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f18e625]:
+          - heading "Quick Links" [level=4] [ref=f18e626]
+          - list [ref=f18e627]:
+            - listitem [ref=f18e628]:
+              - link "Medical Services" [ref=f18e629] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f18e630]:
+              - link "Find a Doctor" [ref=f18e631] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f18e632]:
+              - link "Patient Care" [ref=f18e633] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f18e634]:
+              - link "About Us" [ref=f18e635] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f18e636]:
+              - link "Careers" [ref=f18e637] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f18e638]:
+              - link "Contact Us" [ref=f18e639] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f18e640]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f18e641]:
+          - heading "Get in Touch" [level=4] [ref=f18e642]
+          - generic [ref=f18e643]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f18e644] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f18e649] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f18e650]
+          - generic [ref=f18e651]:
+            - link "+91 40 3526 1515" [ref=f18e652] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f18e656] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f18e661]:
+        - paragraph [ref=f18e662]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f18e663]: Multispeciality Hospital · Jeedimetla, Hyderabad

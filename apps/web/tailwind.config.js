@@ -7,32 +7,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Primary blue matches the real Konark Hospitals logo mark.
+        // Primary teal-green sampled directly from the Konark Hospitals wordmark.
         brand: {
-          50: "#eef7fc",
-          100: "#d7ecf8",
-          200: "#b0d9f0",
-          300: "#7ac4e8",
-          400: "#4aa4d9",
-          500: "#2b86c4",
-          600: "#1d6bab",
-          700: "#19568a",
-          800: "#17456f",
-          900: "#163a5c",
-          950: "#0d233a",
+          50: "#eef8f5",
+          100: "#d7eee7",
+          200: "#b0ddd0",
+          300: "#7ec3b3",
+          400: "#4fa38f",
+          500: "#358573",
+          600: "#276b5c",
+          700: "#20564a",
+          800: "#1c453c",
+          900: "#1a3a33",
+          950: "#0d211d",
         },
-        // Secondary teal/green accent for freshness & vitality alongside the brand blue.
+        // Secondary indigo, sampled from the second orbit ball in the logo mark.
         accent: {
-          50: "#eefbf9",
-          100: "#d3f4ef",
-          200: "#a7e9e0",
-          300: "#71d6ca",
-          400: "#3fbcae",
-          500: "#249e92",
-          600: "#187e75",
-          700: "#166560",
-          800: "#16514e",
-          900: "#154441",
+          50: "#eef0fb",
+          100: "#d9ddf5",
+          200: "#b6bce8",
+          300: "#8991d8",
+          400: "#5c62c2",
+          500: "#3f3fa8",
+          600: "#2f2f8a",
+          700: "#272772",
+          800: "#22225d",
+          900: "#1e1e4d",
         },
         ink: {
           50: "#f6f7f8",

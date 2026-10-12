@@ -1,0 +1,142 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - generic [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - generic [ref=f10e6]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f10e10]: reception@konarkhospitals.com
+      - generic [ref=f10e14]:
+        - navigation [ref=f10e15]:
+          - link "Careers" [ref=f10e16] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f10e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f10e18] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+        - 'link "Emergency: +91 98496 61515" [ref=f10e19] [cursor=pointer]':
+          - /url: tel:+919849661515
+    - generic [ref=f10e21]:
+      - link [ref=f10e22] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f10e23]
+      - navigation [ref=f10e24]:
+        - link "Medical Services" [ref=f10e26] [cursor=pointer]:
+          - /url: /services
+        - link "Doctors" [ref=f10e30] [cursor=pointer]:
+          - /url: /doctors
+        - link "Patient Care" [ref=f10e34] [cursor=pointer]:
+          - /url: /patient-care
+        - link "About" [ref=f10e38] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=f10e42] [cursor=pointer]:
+          - /url: /resources/article
+      - generic [ref=f10e45]:
+        - link "+91 40 3526 1515" [ref=f10e46] [cursor=pointer]:
+          - /url: tel:+914035261515
+        - link "Book Appointment" [ref=f10e49] [cursor=pointer]:
+          - /url: /book-appointment
+  - main [ref=f10e50]:
+    - generic [ref=f10e52]:
+      - navigation [ref=f10e53]:
+        - link "Home" [ref=f10e54] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f10e55]: Contact Us
+      - paragraph [ref=f10e59]: Get in Touch
+      - heading "Contact Us" [level=1] [ref=f10e60]
+      - paragraph [ref=f10e61]: Have a question or need help planning a visit? Reach out — our team typically responds within a few hours.
+    - generic [ref=f10e62]:
+      - generic [ref=f10e63]:
+        - heading "Send Us a Message" [level=2] [ref=f10e64]
+        - generic [ref=f10e66]:
+          - generic [ref=f10e67]:
+            - generic [ref=f10e68]:
+              - generic [ref=f10e69]: Full Name *
+              - textbox "Your name" [ref=f10e70]
+            - generic [ref=f10e71]:
+              - generic [ref=f10e72]: Phone Number *
+              - textbox "Enter a valid 10-digit mobile number" [ref=f10e74]:
+                - /placeholder: 10-digit mobile number
+          - generic [ref=f10e75]:
+            - generic [ref=f10e76]: Email
+            - textbox "you@example.com" [ref=f10e77]
+          - generic [ref=f10e78]:
+            - generic [ref=f10e79]: Subject
+            - textbox "What is this regarding?" [ref=f10e80]
+          - generic [ref=f10e81]:
+            - generic [ref=f10e82]: Message *
+            - textbox "How can we help?" [ref=f10e83]
+          - button "Send Message" [ref=f10e84] [cursor=pointer]
+      - complementary [ref=f10e85]:
+        - link [ref=f10e86] [cursor=pointer]:
+          - /url: tel:+919849661515
+          - generic [ref=f10e92]:
+            - paragraph [ref=f10e93]: 24/7 Emergency
+            - paragraph [ref=f10e94]: +91 98496 61515
+        - generic [ref=f10e95]:
+          - generic [ref=f10e100]:
+            - paragraph [ref=f10e101]: Address
+            - paragraph [ref=f10e102]: "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055"
+          - generic [ref=f10e106]:
+            - paragraph [ref=f10e107]: Phone
+            - link "+91 40 3526 1515" [ref=f10e108] [cursor=pointer]:
+              - /url: tel:+914035261515
+          - generic [ref=f10e113]:
+            - paragraph [ref=f10e114]: Email
+            - link "reception@konarkhospitals.com" [ref=f10e115] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+          - generic [ref=f10e120]:
+            - paragraph [ref=f10e121]: OPD Hours
+            - paragraph [ref=f10e122]: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM
+          - link "Chat on WhatsApp" [ref=f10e123] [cursor=pointer]:
+            - /url: https://wa.me/919849661515
+    - iframe [ref=f10e127]
+  - contentinfo [ref=f10e128]:
+    - generic [ref=f10e129]:
+      - generic [ref=f10e130]:
+        - generic [ref=f10e131]:
+          - link [ref=f10e132] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f10e133]
+          - paragraph [ref=f10e134]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f10e135] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f10e139]:
+          - heading "Quick Links" [level=4] [ref=f10e140]
+          - list [ref=f10e141]:
+            - listitem [ref=f10e142]:
+              - link "Medical Services" [ref=f10e143] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f10e144]:
+              - link "Find a Doctor" [ref=f10e145] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f10e146]:
+              - link "Patient Care" [ref=f10e147] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f10e148]:
+              - link "About Us" [ref=f10e149] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f10e150]:
+              - link "Careers" [ref=f10e151] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f10e152]:
+              - link "Contact Us" [ref=f10e153] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f10e154]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f10e155]:
+          - heading "Get in Touch" [level=4] [ref=f10e156]
+          - generic [ref=f10e157]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f10e158] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f10e163] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f10e164]
+          - generic [ref=f10e165]:
+            - link "+91 40 3526 1515" [ref=f10e166] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f10e170] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f10e175]:
+        - paragraph [ref=f10e176]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f10e177]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - alert [ref=f10e178]
+  - button "Frequently asked questions" [ref=f10e179] [cursor=pointer]: FAQs
+  - button "Chat with Konark Hospitals" [ref=f10e183] [cursor=pointer]

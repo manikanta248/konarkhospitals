@@ -9,6 +9,7 @@ import { ChatMessage, type ChatMessageData } from "./ChatMessage";
 import { AppointmentConfirmCard } from "./AppointmentConfirmCard";
 import { streamChatMessage } from "@/lib/chat-api";
 import { api } from "@/lib/api";
+import { useFooterInView } from "@/lib/use-footer-in-view";
 import type { ChatbotSettings } from "@konark/shared";
 
 const DEFAULT_QUICK_REPLIES = ["OPD timings?", "Book an appointment", "Insurance accepted?", "This is an emergency"];
@@ -34,6 +35,7 @@ export function ChatWidget() {
   const [pendingConfirm, setPendingConfirm] = useState<Record<string, string> | null>(null);
   const [errorBanner, setErrorBanner] = useState("");
   const [settings, setSettings] = useState<ChatbotSettings>({ enabled: true, quickReplies: DEFAULT_QUICK_REPLIES });
+  const footerInView = useFooterInView();
   const sessionIdRef = useRef("");
   const scrollRef = useRef<HTMLDivElement>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -139,8 +141,8 @@ export function ChatWidget() {
 
   return (
     <>
-      <FaqCallout hidden={open} />
-      <ChatBubble open={open} onClick={() => setOpen((v) => !v)} />
+      <FaqCallout hidden={open || footerInView} />
+      <ChatBubble open={open} hidden={!open && footerInView} onClick={() => setOpen((v) => !v)} />
 
       {open && (
         <div

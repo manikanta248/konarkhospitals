@@ -5,8 +5,10 @@ import { DepartmentCard } from "@/components/services/DepartmentCard";
 import { getDepartments } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Medical Services",
-  description: "Explore Konark Hospitals' medical specialities, from cardiology and fertility to orthopaedics and paediatrics.",
+  title: "Medical Services & Specialities in Hyderabad",
+  description:
+    "Explore Konark Hospitals' medical specialities in Jeedimetla, Hyderabad — Fertility & IVF, gynecology, cardiology, orthopaedics, paediatrics, neurology and more.",
+  alternates: { canonical: "/services" },
 };
 
 export default async function ServicesPage() {

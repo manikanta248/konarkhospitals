@@ -9,7 +9,7 @@ import { db } from "../firebase";
 // Anything not listed here has no public photo yet — left blank rather than filled with an
 // unrelated stock photo, so the frontend falls back to a branded placeholder instead.
 const REAL_DOCTOR_PHOTOS: Record<string, string> = {
-  "dr-t-rajani-ashok": "/images/doctors/dr-t-rajani-ashok.jpg",
+  "dr-t-rajani-ashok": "/images/doctors/dr-t-rajani-ashok-web.png",
   "dr-deepak": "/images/doctors/dr-deepak.jpg",
   "dr-p-ramesh": "/images/doctors/dr-p-ramesh.jpg",
   "dr-g-ramcharan": "/images/doctors/dr-g-ramcharan.jpg",
@@ -44,7 +44,7 @@ const departments = [
     conditionsTreated: ["Coronary Artery Disease", "Hypertension", "Arrhythmia", "Heart Failure", "Angina"],
     procedures: ["ECG", "2D Echo", "TMT (Treadmill Test)", "Holter Monitoring"],
     faqs: [{ question: "When should I get a cardiac screening done?", answer: "We recommend a baseline screening from age 30 onward, or earlier if you have a family history of heart disease, diabetes, or hypertension." }],
-    order: 1,
+    order: 7,
     opdOnly: true,
   },
   {
@@ -58,7 +58,7 @@ const departments = [
     conditionsTreated: ["Stroke", "Epilepsy", "Migraine", "Peripheral Neuropathy", "Parkinson's Disease"],
     procedures: ["EEG", "Nerve Conduction Study", "EMG"],
     faqs: [{ question: "What are the warning signs of a stroke?", answer: "Sudden numbness or weakness (especially one-sided), confusion, trouble speaking, vision problems, or loss of balance — seek emergency care immediately if these occur." }],
-    order: 2,
+    order: 8,
     opdOnly: true,
   },
   {
@@ -72,7 +72,7 @@ const departments = [
     conditionsTreated: ["Fractures", "Osteoarthritis", "Ligament Injuries", "Spine Disorders"],
     procedures: ["Total Knee Replacement", "Hip Replacement", "Arthroscopic Surgery"],
     faqs: [{ question: "How long is recovery after a knee replacement?", answer: "Most patients begin walking with support within 24–48 hours and return to normal daily activity in 6–12 weeks, with physiotherapy throughout." }],
-    order: 3,
+    order: 6,
   },
   {
     slug: "fertility-ivf",
@@ -85,7 +85,7 @@ const departments = [
     conditionsTreated: ["Infertility", "PCOS", "Recurrent Miscarriage"],
     procedures: ["IVF Cycle", "IUI", "Ovulation Induction"],
     faqs: [{ question: "How long does one IVF cycle take?", answer: "A typical IVF cycle takes about 4–6 weeks from ovarian stimulation through embryo transfer." }],
-    order: 4,
+    order: 1,
   },
   {
     slug: "gynecology",
@@ -98,7 +98,7 @@ const departments = [
     conditionsTreated: ["High-risk Pregnancy", "Fibroids", "PCOS", "Menstrual Disorders"],
     procedures: ["Delivery Care", "Laparoscopic Gynae Surgery", "Hysterectomy"],
     faqs: [{ question: "What makes a pregnancy \"high-risk\"?", answer: "Factors like maternal age, pre-existing conditions (diabetes, hypertension), multiple pregnancy, or prior complications can classify a pregnancy as high-risk, requiring closer monitoring." }],
-    order: 5,
+    order: 2,
   },
   {
     slug: "paediatrics",
@@ -111,7 +111,7 @@ const departments = [
     conditionsTreated: ["Neonatal Jaundice", "Respiratory Infections", "Growth Disorders"],
     procedures: ["NICU Care", "Well-baby Checkups"],
     faqs: [{ question: "Do you offer a full childhood vaccination schedule?", answer: "Yes — we follow the recommended national immunisation schedule and can guide you through catch-up vaccinations if needed." }],
-    order: 6,
+    order: 3,
   },
   {
     slug: "urology",
@@ -124,7 +124,7 @@ const departments = [
     conditionsTreated: ["Kidney Stones", "Prostate Enlargement", "UTI", "Male Infertility"],
     procedures: ["Endoscopic Stone Removal", "Cystoscopy"],
     faqs: [{ question: "Is kidney stone treatment always surgical?", answer: "No — smaller stones often pass with medication and hydration. Larger or recurrent stones may need endoscopic removal, which our team performs using minimally invasive techniques." }],
-    order: 7,
+    order: 5,
   },
   {
     slug: "pulmonology",
@@ -137,7 +137,7 @@ const departments = [
     conditionsTreated: ["Asthma", "COPD", "Pneumonia", "Sleep Apnea"],
     procedures: ["Spirometry", "Bronchoscopy"],
     faqs: [{ question: "How is asthma different from COPD?", answer: "Asthma is typically reversible airway inflammation often starting in childhood, while COPD is progressive and most common in long-term smokers — both are managed differently, so an accurate diagnosis matters." }],
-    order: 8,
+    order: 9,
     opdOnly: true,
   },
   {
@@ -151,7 +151,7 @@ const departments = [
     conditionsTreated: ["Fever & Infections", "Diabetes", "Hypertension", "Thyroid Disorders"],
     procedures: ["Routine Health Screening", "Chronic Disease Monitoring"],
     faqs: [],
-    order: 9,
+    order: 4,
     opdOnly: true,
   },
   {
@@ -395,6 +395,14 @@ const testimonials = [
   { patientName: "Mohammed Ali", quote: "Quick diagnosis and minimally invasive treatment for my kidney stones — back on my feet within days.", departmentSlug: "urology", rating: 4 },
 ].map((t) => ({ ...t, photo: "" }));
 
+// Real testimonial videos, compressed and stored under apps/web/public/videos/testimonials.
+// Further videos are added through the admin panel (Video Testimonials), not this seed file.
+const testimonialVideos = [
+  { posterUrl: "/images/testimonials/testimonial-1-poster.jpg", videoUrl: "/videos/testimonials/testimonial-1.mp4", order: 1 },
+  { posterUrl: "/images/testimonials/testimonial-2-poster.jpg", videoUrl: "/videos/testimonials/testimonial-2.mp4", order: 2 },
+  { posterUrl: "/images/testimonials/testimonial-3-poster.jpg", videoUrl: "/videos/testimonials/testimonial-3.mp4", order: 3 },
+];
+
 // Editorial content written for this site — the live site's blog had no published posts to
 // carry over. Cover images reuse real department/facility photos where topically relevant.
 // The video post has no videoUrl until a real one is uploaded via the admin panel.
@@ -451,6 +459,7 @@ async function main() {
   await seedCollection("departments", departments);
   await seedCollection("doctors", doctors);
   await seedCollection("testimonials", testimonials);
+  await seedCollection("testimonialVideos", testimonialVideos);
   await seedCollection("articles", articles);
   await seedCollection("events", events);
   await seedCollection("careers", careers);

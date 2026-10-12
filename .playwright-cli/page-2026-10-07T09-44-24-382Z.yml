@@ -1,0 +1,220 @@
+- generic [active] [ref=f14e1]:
+  - banner [ref=f14e2]:
+    - generic [ref=f14e4]:
+      - link [ref=f14e5] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f14e6]
+      - button "Open menu" [ref=f14e8] [cursor=pointer]
+    - generic [ref=f14e10]:
+      - generic [ref=f14e11]:
+        - link [ref=f14e12] [cursor=pointer]:
+          - /url: /
+          - img "Konark Hospitals" [ref=f14e13]
+        - button "Close menu" [ref=f14e14] [cursor=pointer]
+      - generic [ref=f14e18]:
+        - generic [ref=f14e19]:
+          - button "Medical Services" [ref=f14e20] [cursor=pointer]
+          - list [ref=f14e23]:
+            - listitem [ref=f14e24]:
+              - link "Cardiology" [ref=f14e25] [cursor=pointer]:
+                - /url: /services/cardiology
+            - listitem [ref=f14e26]:
+              - link "Neurology" [ref=f14e27] [cursor=pointer]:
+                - /url: /services/neurology
+            - listitem [ref=f14e28]:
+              - link "Orthopaedics" [ref=f14e29] [cursor=pointer]:
+                - /url: /services/orthopaedics
+            - listitem [ref=f14e30]:
+              - link "Fertility & IVF" [ref=f14e31] [cursor=pointer]:
+                - /url: /services/fertility-ivf
+            - listitem [ref=f14e32]:
+              - link "Gynecology" [ref=f14e33] [cursor=pointer]:
+                - /url: /services/gynecology
+            - listitem [ref=f14e34]:
+              - link "Paediatrics" [ref=f14e35] [cursor=pointer]:
+                - /url: /services/paediatrics
+            - listitem [ref=f14e36]:
+              - link "Urology" [ref=f14e37] [cursor=pointer]:
+                - /url: /services/urology
+            - listitem [ref=f14e38]:
+              - link "Pulmonology" [ref=f14e39] [cursor=pointer]:
+                - /url: /services/pulmonology
+            - listitem [ref=f14e40]:
+              - link "General Medicine" [ref=f14e41] [cursor=pointer]:
+                - /url: /services/general-medicine
+            - listitem [ref=f14e42]:
+              - link "Plastic Surgery & Cosmetology" [ref=f14e43] [cursor=pointer]:
+                - /url: /services/plastic-surgery-cosmetology
+            - listitem [ref=f14e44]:
+              - link "ENT" [ref=f14e45] [cursor=pointer]:
+                - /url: /services/ent
+            - listitem [ref=f14e46]:
+              - link "Physiotherapy" [ref=f14e47] [cursor=pointer]:
+                - /url: /services/physiotherapy
+            - listitem [ref=f14e48]:
+              - link "Vascular & Endovascular Surgery" [ref=f14e49] [cursor=pointer]:
+                - /url: /services/vascular-surgery
+        - button "Doctors" [ref=f14e51] [cursor=pointer]
+        - button "Patient Care" [ref=f14e55] [cursor=pointer]
+        - button "About" [ref=f14e59] [cursor=pointer]
+        - button "Resources" [ref=f14e63] [cursor=pointer]
+        - generic [ref=f14e66]:
+          - link "Careers" [ref=f14e67] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f14e68] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f14e69] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+      - link "Call +91 40 3526 1515" [ref=f14e71] [cursor=pointer]:
+        - /url: tel:+914035261515
+  - main [ref=f14e74]:
+    - generic [ref=f14e76]:
+      - navigation [ref=f14e77]:
+        - link "Home" [ref=f14e78] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f14e79]: Medical Services
+      - paragraph [ref=f14e83]: Specialities
+      - heading "Medical Services We Offer" [level=1] [ref=f14e84]
+      - paragraph [ref=f14e85]: 13+ specialities backed by dedicated consultants, modern diagnostics and dedicated care — all under one roof at Konark Hospitals.
+    - generic [ref=f14e87]:
+      - link [ref=f14e88] [cursor=pointer]:
+        - /url: /services/fertility-ivf
+        - img "Fertility & IVF" [ref=f14e90]
+        - generic [ref=f14e91]:
+          - heading "Fertility & IVF" [level=3] [ref=f14e93]
+          - generic [ref=f14e94]: Explore department
+      - link [ref=f14e98] [cursor=pointer]:
+        - /url: /services/gynecology
+        - img "Gynecology & Obstetrics" [ref=f14e100]
+        - generic [ref=f14e101]:
+          - heading "Gynecology & Obstetrics" [level=3] [ref=f14e103]
+          - generic [ref=f14e104]: Explore department
+      - link [ref=f14e108] [cursor=pointer]:
+        - /url: /services/paediatrics
+        - img "Paediatrics & Neonatology" [ref=f14e110]
+        - generic [ref=f14e111]:
+          - heading "Paediatrics & Neonatology" [level=3] [ref=f14e113]
+          - generic [ref=f14e114]: Explore department
+      - link "General Medicine General Medicine OPD Only Explore department" [ref=f14e118] [cursor=pointer]:
+        - /url: /services/general-medicine
+        - img "General Medicine" [ref=f14e120]
+        - generic [ref=f14e121]:
+          - generic [ref=f14e122]:
+            - heading "General Medicine" [level=3] [ref=f14e123]
+            - generic [ref=f14e124]: OPD Only
+          - generic [ref=f14e125]: Explore department
+      - link [ref=f14e129] [cursor=pointer]:
+        - /url: /services/urology
+        - img "Urology" [ref=f14e131]
+        - generic [ref=f14e132]:
+          - heading "Urology" [level=3] [ref=f14e134]
+          - generic [ref=f14e135]: Explore department
+      - link [ref=f14e139] [cursor=pointer]:
+        - /url: /services/orthopaedics
+        - img "Orthopaedics" [ref=f14e141]
+        - generic [ref=f14e142]:
+          - heading "Orthopaedics" [level=3] [ref=f14e144]
+          - generic [ref=f14e145]: Explore department
+      - link "Cardiology Cardiology OPD Only Explore department" [ref=f14e149] [cursor=pointer]:
+        - /url: /services/cardiology
+        - img "Cardiology" [ref=f14e151]
+        - generic [ref=f14e152]:
+          - generic [ref=f14e153]:
+            - heading "Cardiology" [level=3] [ref=f14e154]
+            - generic [ref=f14e155]: OPD Only
+          - generic [ref=f14e156]: Explore department
+      - link "Neurology Neurology OPD Only Explore department" [ref=f14e160] [cursor=pointer]:
+        - /url: /services/neurology
+        - img "Neurology" [ref=f14e162]
+        - generic [ref=f14e163]:
+          - generic [ref=f14e164]:
+            - heading "Neurology" [level=3] [ref=f14e165]
+            - generic [ref=f14e166]: OPD Only
+          - generic [ref=f14e167]: Explore department
+      - link "Pulmonology Pulmonology OPD Only Explore department" [ref=f14e171] [cursor=pointer]:
+        - /url: /services/pulmonology
+        - img "Pulmonology" [ref=f14e173]
+        - generic [ref=f14e174]:
+          - generic [ref=f14e175]:
+            - heading "Pulmonology" [level=3] [ref=f14e176]
+            - generic [ref=f14e177]: OPD Only
+          - generic [ref=f14e178]: Explore department
+      - link [ref=f14e182] [cursor=pointer]:
+        - /url: /services/plastic-surgery-cosmetology
+        - img "Plastic Surgery & Cosmetology" [ref=f14e184]
+        - generic [ref=f14e185]:
+          - heading "Plastic Surgery & Cosmetology" [level=3] [ref=f14e187]
+          - generic [ref=f14e188]: Explore department
+      - link [ref=f14e192] [cursor=pointer]:
+        - /url: /services/ent
+        - img "ENT" [ref=f14e194]
+        - generic [ref=f14e195]:
+          - heading "ENT" [level=3] [ref=f14e197]
+          - generic [ref=f14e198]: Explore department
+      - link [ref=f14e202] [cursor=pointer]:
+        - /url: /services/physiotherapy
+        - img "Physiotherapy" [ref=f14e204]
+        - generic [ref=f14e205]:
+          - heading "Physiotherapy" [level=3] [ref=f14e207]
+          - generic [ref=f14e208]: Explore department
+      - link [ref=f14e212] [cursor=pointer]:
+        - /url: /services/vascular-surgery
+        - img "Vascular & Endovascular Surgery" [ref=f14e214]
+        - generic [ref=f14e215]:
+          - heading "Vascular & Endovascular Surgery" [level=3] [ref=f14e217]
+          - generic [ref=f14e218]: Explore department
+  - contentinfo [ref=f14e222]:
+    - generic [ref=f14e223]:
+      - generic [ref=f14e224]:
+        - generic [ref=f14e225]:
+          - link [ref=f14e226] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f14e227]
+          - paragraph [ref=f14e228]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f14e229] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f14e233]:
+          - heading "Quick Links" [level=4] [ref=f14e234]
+          - list [ref=f14e235]:
+            - listitem [ref=f14e236]:
+              - link "Medical Services" [ref=f14e237] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f14e238]:
+              - link "Find a Doctor" [ref=f14e239] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f14e240]:
+              - link "Patient Care" [ref=f14e241] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f14e242]:
+              - link "About Us" [ref=f14e243] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f14e244]:
+              - link "Careers" [ref=f14e245] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f14e246]:
+              - link "Contact Us" [ref=f14e247] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f14e248]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f14e249]:
+          - heading "Get in Touch" [level=4] [ref=f14e250]
+          - generic [ref=f14e251]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f14e252] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f14e257] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f14e258]
+          - generic [ref=f14e259]:
+            - link "+91 40 3526 1515" [ref=f14e260] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f14e264] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f14e269]:
+        - paragraph [ref=f14e270]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f14e271]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - generic [ref=f14e272]:
+    - link "Call" [ref=f14e273] [cursor=pointer]:
+      - /url: tel:+914035261515
+    - link "WhatsApp" [ref=f14e277] [cursor=pointer]:
+      - /url: https://wa.me/919849661515
+    - link "Book Now" [ref=f14e281] [cursor=pointer]:
+      - /url: /book-appointment

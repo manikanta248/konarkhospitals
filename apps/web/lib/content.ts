@@ -1,6 +1,15 @@
 import { api } from "./api";
-import type { Article, ArticleType, CareerPosting, Department, Doctor, HealthPackage, HospitalEvent, Testimonial } from "@konark/shared";
-import { FALLBACK_ARTICLES, FALLBACK_CAREERS, FALLBACK_DEPARTMENTS, FALLBACK_DOCTORS, FALLBACK_EVENTS, FALLBACK_HEALTH_PACKAGES, FALLBACK_TESTIMONIALS } from "./fallback-content";
+import type { Article, ArticleType, CareerPosting, Department, Doctor, HealthPackage, HospitalEvent, Testimonial, TestimonialVideo } from "@konark/shared";
+import {
+  FALLBACK_ARTICLES,
+  FALLBACK_CAREERS,
+  FALLBACK_DEPARTMENTS,
+  FALLBACK_DOCTORS,
+  FALLBACK_EVENTS,
+  FALLBACK_HEALTH_PACKAGES,
+  FALLBACK_TESTIMONIALS,
+  FALLBACK_TESTIMONIAL_VIDEOS,
+} from "./fallback-content";
 
 // Server-side content fetchers. Each fails soft (falls back to static seed-matching
 // content) so pages render fully during local development before the API/Firestore
@@ -97,6 +106,24 @@ export async function getCareer(slug: string): Promise<CareerPosting | null> {
     return item;
   } catch {
     return FALLBACK_CAREERS.find((c) => c.slug === slug) ?? null;
+  }
+}
+
+// Cursor-paginated — the video gallery can grow to a very large number of entries, so the
+// homepage only ever fetches one page at a time (see components/home/TestimonialVideos.tsx),
+// loading more as the visitor scrolls instead of shipping the entire collection up front.
+export async function getTestimonialVideos(
+  limit = 12,
+  cursor?: string
+): Promise<{ items: TestimonialVideo[]; nextCursor: string | null }> {
+  const qs = new URLSearchParams({ limit: String(limit) });
+  if (cursor) qs.set("cursor", cursor);
+  try {
+    const res = await api.get<{ items: TestimonialVideo[]; nextCursor: string | null }>(`/api/testimonial-videos?${qs.toString()}`);
+    if (res.items.length || cursor) return res;
+    return { items: FALLBACK_TESTIMONIAL_VIDEOS, nextCursor: null };
+  } catch {
+    return cursor ? { items: [], nextCursor: null } : { items: FALLBACK_TESTIMONIAL_VIDEOS, nextCursor: null };
   }
 }
 

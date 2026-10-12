@@ -19,6 +19,24 @@ const steps = [
   { title: "Collection or delivery", description: "Collect your records in person, or ask about digital/email delivery for select document types." },
 ];
 
+const RECORDS_EMAIL_SUBJECT = "Medical Records Request";
+const RECORDS_EMAIL_BODY = `Dear Konark Hospitals Records Team,
+
+I would like to request a copy of my medical records. My details are below:
+
+Full Name:
+UHID / Patient Registration Number (if known):
+Approximate Date of Treatment:
+Department / Doctor Consulted:
+Records Needed (e.g. discharge summary, lab reports, imaging, prescriptions):
+Reason for Request:
+
+Please let me know if you need any additional information to process this request.
+
+Thank you.`;
+
+const recordsMailtoLink = `mailto:${HOSPITAL.email}?subject=${encodeURIComponent(RECORDS_EMAIL_SUBJECT)}&body=${encodeURIComponent(RECORDS_EMAIL_BODY)}`;
+
 export default function MedicalRecordsPage() {
   return (
     <>
@@ -56,13 +74,12 @@ export default function MedicalRecordsPage() {
         <div className="flex flex-col items-start gap-4 rounded-xl2 bg-ink-950 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
             <p className="text-base font-semibold text-white">Need help with a records request?</p>
-            <p className="mt-1 flex items-center gap-2 text-sm text-ink-400">
-              <Mail size={14} />
-              {HOSPITAL.email}
+            <p className="mt-1 text-sm text-ink-400">
+              Email us a ready-made request form — just fill in your details and send.
             </p>
           </div>
-          <ButtonLink href="/contact" variant="inverse">
-            Contact Us
+          <ButtonLink href={recordsMailtoLink} variant="inverse" icon={<Mail size={16} />}>
+            Email Us
           </ButtonLink>
         </div>
       </Container>

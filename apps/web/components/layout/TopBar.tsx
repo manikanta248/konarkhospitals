@@ -19,11 +19,23 @@ export function TopBar() {
         </div>
         <div className="flex items-center gap-5 whitespace-nowrap">
           <nav className="flex items-center gap-4 border-r border-white/10 pr-5">
-            {UTILITY_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="text-brand-200 transition-colors hover:text-white">
-                {link.label}
-              </Link>
-            ))}
+            {UTILITY_LINKS.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-200 transition-colors hover:text-white"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.href} href={link.href} className="text-brand-200 transition-colors hover:text-white">
+                  {link.label}
+                </Link>
+              )
+            )}
           </nav>
           <a
             href={`tel:${HOSPITAL.emergency.replace(/\s/g, "")}`}

@@ -19,10 +19,19 @@ export default function AdminLoginPage() {
     const data = new FormData(e.currentTarget);
 
     try {
-      await login(String(data.get("email")), String(data.get("password")));
+      await login(String(data.get("email")).trim(), String(data.get("password")));
       router.replace("/admin");
-    } catch {
-      setError("Invalid email or password.");
+    } catch (err) {
+      const code = (err as { code?: string })?.code ?? "";
+      if (code === "auth/too-many-requests") {
+        setError("Too many failed attempts. Please wait a few minutes and try again.");
+      } else if (code === "auth/network-request-failed") {
+        setError("Network error. Check your connection and try again.");
+      } else if (code === "auth/invalid-credential" || code === "auth/wrong-password" || code === "auth/user-not-found") {
+        setError("Invalid email or password.");
+      } else {
+        setError(`Sign-in failed${code ? ` (${code})` : ""}. Please try again.`);
+      }
       setLoading(false);
     }
   }

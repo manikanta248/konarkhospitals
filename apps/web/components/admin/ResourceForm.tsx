@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { FieldLabel, inputClass, textareaClass, type FieldConfig } from "./fields";
+import { UploadField } from "./UploadField";
 
 function toDisplayValue(field: FieldConfig, raw: unknown): string {
   if (raw === undefined || raw === null) return field.type === "checkbox" ? "false" : "";
@@ -84,7 +85,16 @@ export function ResourceForm({
             </FieldLabel>
           )}
 
-          {field.type === "textarea" || field.type === "list" || field.type === "json" ? (
+          {field.type === "image" || field.type === "video" ? (
+            <UploadField
+              id={"field-" + field.name}
+              kind={field.type}
+              value={values[field.name] ?? ""}
+              onChange={(url) => setField(field.name, url)}
+              placeholder={field.placeholder}
+              help={field.help}
+            />
+          ) : field.type === "textarea" || field.type === "list" || field.type === "json" ? (
             <textarea
               value={values[field.name] ?? ""}
               onChange={(e) => setField(field.name, e.target.value)}

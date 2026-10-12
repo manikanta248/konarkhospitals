@@ -3,12 +3,12 @@
 // so once the backend is live this fallback is simply superseded — no page code changes.
 // Image paths point to real assets recovered from konarkhospitals.com (apps/web/public/images);
 // anything missing is left "" so the UI falls back to a branded placeholder, never a random photo.
-import type { Article, CareerPosting, Department, Doctor, HealthPackage, HospitalEvent, Testimonial } from "@konark/shared";
+import type { Article, CareerPosting, Department, Doctor, HealthPackage, HospitalEvent, Testimonial, TestimonialVideo } from "@konark/shared";
 import { DOCTOR_PHOTOS } from "./doctor-photos";
 
 export const FALLBACK_DEPARTMENTS: Department[] = [
   {
-    id: "d1", slug: "cardiology", name: "Cardiology", order: 1, opdOnly: true,
+    id: "d1", slug: "cardiology", name: "Cardiology", order: 7, opdOnly: true,
     shortDescription: "Comprehensive heart care from diagnostics to advanced cardiac procedures.",
     description: "Konark Hospitals' Cardiology department delivers complete cardiac care — from routine screening and ECG/echo diagnostics to management of coronary artery disease, hypertension, arrhythmia and heart failure. Our physicians work closely with the emergency and critical care teams to ensure rapid response for cardiac emergencies.",
     heroImage: "/images/departments/cardiology.jpg",
@@ -21,7 +21,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d2", slug: "neurology", name: "Neurology", order: 2, opdOnly: true,
+    id: "d2", slug: "neurology", name: "Neurology", order: 8, opdOnly: true,
     shortDescription: "Expert diagnosis and treatment for disorders of the brain, spine and nervous system.",
     description: "Our Neurology team manages the full spectrum of neurological conditions including stroke, epilepsy, headaches, and neuromuscular disorders, supported by round-the-clock emergency neurology care and rehabilitation services.",
     heroImage: "/images/departments/neurology.jpg",
@@ -33,7 +33,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d3", slug: "orthopaedics", name: "Orthopaedics", order: 3,
+    id: "d3", slug: "orthopaedics", name: "Orthopaedics", order: 6,
     shortDescription: "Trauma care, joint replacement and sports injury treatment by experienced surgeons.",
     description: "The Orthopaedics department, led by experienced trauma and joint-replacement surgeons, treats fractures, degenerative joint disease, and sports injuries with both surgical and non-surgical approaches, followed by structured physiotherapy.",
     heroImage: "/images/departments/orthopaedics.jpg",
@@ -45,7 +45,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d4", slug: "fertility-ivf", name: "Fertility & IVF", order: 4,
+    id: "d4", slug: "fertility-ivf", name: "Fertility & IVF", order: 1,
     shortDescription: "Advanced fertility treatments including IVF and IUI by our most experienced specialist.",
     description: "Konark Hospitals is recognised as one of Hyderabad's leading fertility centres, offering IVF, IUI and comprehensive infertility evaluation under the care of a fertility specialist with close to three decades of experience in obstetrics and gynaecology.",
     heroImage: "/images/departments/fertility-ivf.jpg",
@@ -58,7 +58,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d5", slug: "gynecology", name: "Gynecology & Obstetrics", order: 5,
+    id: "d5", slug: "gynecology", name: "Gynecology & Obstetrics", order: 2,
     shortDescription: "Complete women's health care from pregnancy through every life stage.",
     description: "Our Gynaecology & Obstetrics team manages normal and high-risk pregnancies, deliveries, and gynaecological surgeries, including complex cases such as placenta accreta and broad ligament fibroid removal.",
     heroImage: "/images/departments/gynecology.jpg",
@@ -70,7 +70,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d6", slug: "paediatrics", name: "Paediatrics & Neonatology", order: 6,
+    id: "d6", slug: "paediatrics", name: "Paediatrics & Neonatology", order: 3,
     shortDescription: "Specialised care for newborns, infants and children.",
     description: "The Paediatrics & Neonatology unit provides newborn care, vaccination, growth monitoring and treatment for common and complex childhood illnesses, with neonatal support for high-risk deliveries.",
     heroImage: "/images/departments/paediatrics.jpg",
@@ -82,7 +82,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d7", slug: "urology", name: "Urology", order: 7,
+    id: "d7", slug: "urology", name: "Urology", order: 5,
     shortDescription: "Diagnosis and treatment of urinary tract and male reproductive conditions.",
     description: "Our Urology & Andrology specialists treat kidney stones, prostate disorders and urinary tract conditions using both minimally invasive and conventional techniques.",
     heroImage: "/images/departments/urology.jpg",
@@ -94,7 +94,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d8", slug: "pulmonology", name: "Pulmonology", order: 8, opdOnly: true,
+    id: "d8", slug: "pulmonology", name: "Pulmonology", order: 9, opdOnly: true,
     shortDescription: "Comprehensive respiratory and lung care for acute and chronic conditions.",
     description: "The Pulmonology department diagnoses and manages asthma, COPD, and other respiratory conditions using pulmonary function testing and evidence-based treatment protocols.",
     heroImage: "/images/departments/pulmonology.jpg",
@@ -106,7 +106,7 @@ export const FALLBACK_DEPARTMENTS: Department[] = [
     ],
   },
   {
-    id: "d9", slug: "general-medicine", name: "General Medicine", order: 9, opdOnly: true,
+    id: "d9", slug: "general-medicine", name: "General Medicine", order: 4, opdOnly: true,
     shortDescription: "Outpatient consultation and management of everyday illness and chronic conditions.",
     description: "Our General Medicine consultants manage a wide range of everyday health concerns — from fever, infections and diabetes to hypertension and chronic disease follow-up — with a focus on accurate diagnosis and timely referral to specialists when needed.",
     heroImage: "/images/departments/general-medicine.jpg",
@@ -189,6 +189,12 @@ export const FALLBACK_TESTIMONIALS: Testimonial[] = [
   { id: "t4", patientName: "Srinivas Rao", photo: "", quote: "Prompt emergency response and attentive cardiac care — couldn't have asked for better treatment for my father.", departmentSlug: "cardiology", rating: 5 },
   { id: "t5", patientName: "Anitha Kumari", photo: "", quote: "The paediatric team was so patient with my daughter. They explained everything and made her comfortable throughout.", departmentSlug: "paediatrics", rating: 5 },
   { id: "t6", patientName: "Mohammed Ali", photo: "", quote: "Quick diagnosis and minimally invasive treatment for my kidney stones — back on my feet within days.", departmentSlug: "urology", rating: 4 },
+];
+
+export const FALLBACK_TESTIMONIAL_VIDEOS: TestimonialVideo[] = [
+  { id: "tv1", posterUrl: "/images/testimonials/testimonial-1-poster.jpg", videoUrl: "/videos/testimonials/testimonial-1.mp4", order: 1 },
+  { id: "tv2", posterUrl: "/images/testimonials/testimonial-2-poster.jpg", videoUrl: "/videos/testimonials/testimonial-2.mp4", order: 2 },
+  { id: "tv3", posterUrl: "/images/testimonials/testimonial-3-poster.jpg", videoUrl: "/videos/testimonials/testimonial-3.mp4", order: 3 },
 ];
 
 // Editorial content written for this site (the live site's blog had no published posts to

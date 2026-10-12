@@ -3,7 +3,7 @@ import type { FieldConfig } from "@/components/admin/fields";
 export const DOCTOR_FIELDS: FieldConfig[] = [
   { type: "text", name: "slug", label: "Slug", required: true, placeholder: "dr-jane-doe" },
   { type: "text", name: "name", label: "Full Name", required: true },
-  { type: "text", name: "photo", label: "Photo URL", placeholder: "/images/doctors/... or https://..." },
+  { type: "image", name: "photo", label: "Doctor photo", help: "Square or portrait photo works best, JPG or PNG, up to 10 MB." },
   { type: "text", name: "departmentSlug", label: "Department Slug", required: true },
   { type: "text", name: "departmentName", label: "Department Name", required: true },
   { type: "text", name: "qualifications", label: "Qualifications" },
@@ -22,7 +22,7 @@ export const DEPARTMENT_FIELDS: FieldConfig[] = [
   { type: "text", name: "name", label: "Name", required: true },
   { type: "text", name: "shortDescription", label: "Short Description" },
   { type: "textarea", name: "description", label: "Full Description", rows: 5 },
-  { type: "text", name: "heroImage", label: "Hero Image URL" },
+  { type: "image", name: "heroImage", label: "Page banner image", help: "Wide landscape photo works best, up to 10 MB." },
   { type: "list", name: "services", label: "Services" },
   { type: "list", name: "conditionsTreated", label: "Conditions Treated" },
   { type: "list", name: "procedures", label: "Procedures" },
@@ -47,8 +47,8 @@ export const ARTICLE_FIELDS: FieldConfig[] = [
   { type: "text", name: "title", label: "Title", required: true },
   { type: "text", name: "summary", label: "Summary" },
   { type: "textarea", name: "content", label: "Content", rows: 8 },
-  { type: "text", name: "coverImage", label: "Cover Image URL" },
-  { type: "text", name: "videoUrl", label: "Video URL (for video type)" },
+  { type: "image", name: "coverImage", label: "Cover image", help: "Landscape 16:9 photo works best, up to 10 MB." },
+  { type: "video", name: "videoUrl", label: "Video file (for video type)", help: "MP4 or WebM, up to 200 MB." },
   { type: "text", name: "author", label: "Author" },
   { type: "list", name: "tags", label: "Tags" },
   { type: "text", name: "publishedAt", label: "Published Date", placeholder: "YYYY-MM-DDTHH:mm:ss.000Z" },
@@ -62,13 +62,20 @@ export const TESTIMONIAL_FIELDS: FieldConfig[] = [
   { type: "number", name: "rating", label: "Rating (1-5)" },
 ];
 
+export const TESTIMONIAL_VIDEO_FIELDS: FieldConfig[] = [
+  { type: "text", name: "patientName", label: "Patient Name (optional)" },
+  { type: "image", name: "posterUrl", label: "Thumbnail image", required: true, help: "Shown before the video plays. Portrait or square works best." },
+  { type: "video", name: "videoUrl", label: "Video file", required: true, help: "MP4 or WebM, up to 200 MB." },
+  { type: "number", name: "order", label: "Display Order" },
+];
+
 export const EVENT_FIELDS: FieldConfig[] = [
   { type: "text", name: "slug", label: "Slug", required: true },
   { type: "text", name: "title", label: "Title", required: true },
   { type: "text", name: "summary", label: "Summary" },
   { type: "text", name: "date", label: "Date", placeholder: "YYYY-MM-DD" },
   { type: "text", name: "location", label: "Location" },
-  { type: "text", name: "coverImage", label: "Cover Image URL" },
+  { type: "image", name: "coverImage", label: "Cover image", help: "Landscape 16:9 photo works best, up to 10 MB." },
 ];
 
 export const CAREER_FIELDS: FieldConfig[] = [
@@ -91,7 +98,7 @@ export const HEALTH_PACKAGE_FIELDS: FieldConfig[] = [
   { type: "textarea", name: "description", label: "Description", rows: 3 },
   { type: "number", name: "price", label: "Price (₹)" },
   { type: "list", name: "inclusions", label: "Inclusions" },
-  { type: "text", name: "image", label: "Image URL" },
+  { type: "image", name: "image", label: "Package image" },
   { type: "number", name: "order", label: "Display Order" },
 ];
 

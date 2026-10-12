@@ -19,8 +19,8 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
       <div
         className={`fixed inset-y-0 right-0 z-[70] flex w-[86%] max-w-sm flex-col bg-white shadow-floating transition-transform duration-300 lg:hidden ${open ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex h-20 shrink-0 items-center justify-between border-b border-ink-100 px-4">
-          <Logo />
+        <div className="flex h-24 shrink-0 items-center justify-between border-b border-ink-100 px-4">
+          <Logo className="h-[84px] w-auto object-contain" />
           <button aria-label="Close menu" onClick={onClose} className="flex h-9 w-9 items-center justify-center rounded-lg text-ink-600 hover:bg-ink-50">
             <X size={20} />
           </button>
@@ -51,11 +51,23 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
           ))}
 
           <div className="mt-2 flex flex-col">
-            {UTILITY_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="px-3 py-3.5 text-[15px] font-semibold text-ink-900">
-                {link.label}
-              </Link>
-            ))}
+            {UTILITY_LINKS.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-3.5 text-[15px] font-semibold text-ink-900"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.href} href={link.href} className="px-3 py-3.5 text-[15px] font-semibold text-ink-900">
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
         </div>
 

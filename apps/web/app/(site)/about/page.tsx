@@ -7,8 +7,9 @@ import { DepartmentImage } from "@/components/ui/DepartmentImage";
 import { ABOUT, HOSPITAL } from "@konark/shared";
 
 export const metadata: Metadata = {
-  title: "About Konark Hospitals",
-  description: "A 100-bed multispeciality hospital in Jeedimetla, Hyderabad, founded by Dr. T. Rajani Ashok.",
+  title: "About Us — Multispeciality Hospital in Hyderabad",
+  description: "Konark Hospitals is a 100-bed multispeciality hospital in Jeedimetla, Hyderabad, founded by Dr. T. Rajani Ashok in 2009.",
+  alternates: { canonical: "/about" },
 };
 
 const valueIcons = [HeartHandshake, IndianRupee, ShieldCheck, Sparkles];

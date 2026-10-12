@@ -10,6 +10,7 @@ import appointmentsRouter from "./routes/appointments";
 import contactRouter from "./routes/contact";
 import dashboardRouter from "./routes/dashboard";
 import chatRouter from "./routes/chat";
+import uploadsRouter from "./routes/uploads";
 import { invalidateChatContextCache } from "./lib/chatContext";
 
 dotenv.config();
@@ -38,6 +39,7 @@ app.use("/api/departments", createCollectionRouter("departments"));
 app.use("/api/doctors", createCollectionRouter("doctors"));
 app.use("/api/articles", createCollectionRouter("articles"));
 app.use("/api/testimonials", createCollectionRouter("testimonials"));
+app.use("/api/testimonial-videos", createCollectionRouter("testimonialVideos"));
 app.use("/api/events", createCollectionRouter("events"));
 app.use("/api/careers", createCollectionRouter("careers"));
 app.use("/api/health-packages", createCollectionRouter("healthPackages"));
@@ -55,6 +57,7 @@ app.use("/api/chat-knowledge", createCollectionRouter("chatKnowledge"));
 app.use("/api/appointments", formLimiter, appointmentsRouter);
 app.use("/api/contact", formLimiter, contactRouter);
 app.use("/api/dashboard", dashboardRouter);
+app.use("/api/uploads", uploadsRouter);
 app.use("/api/chat/confirm-appointment", chatBookingLimiter);
 app.use("/api/chat", chatLimiter, chatRouter);
 

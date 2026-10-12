@@ -2,35 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, HelpCircle, X } from "lucide-react";
-import { HOSPITAL } from "@konark/shared";
-
-const FAQS = [
-  {
-    question: "What are your OPD timings?",
-    answer: `OPD consultations run ${HOSPITAL.opdHours}. The Emergency Department is open 24/7.`,
-  },
-  {
-    question: "How can I book an appointment?",
-    answer: "Book online through our Book Appointment page, call us, or use the chat right here — all three reach the same team.",
-  },
-  {
-    question: "Do you accept insurance or cashless TPA treatment?",
-    answer:
-      "Yes. Our billing desk verifies your coverage and handles pre-authorization for cashless treatment wherever possible — carry your insurance/TPA card and policy details at admission.",
-  },
-  {
-    question: "Is emergency care available 24/7?",
-    answer: `Yes — call ${HOSPITAL.emergency} or come directly to the hospital any time, day or night.`,
-  },
-  {
-    question: "Do you treat international patients?",
-    answer: `Yes. Email your medical reports to ${HOSPITAL.email} and our team will respond with a treatment plan and cost estimate, typically within 2–3 business days.`,
-  },
-  {
-    question: "Where is Konark Hospitals located?",
-    answer: `${HOSPITAL.address}. On-site parking is available for patients and visitors.`,
-  },
-];
+import { SITE_FAQS as FAQS } from "@/lib/site-faqs";
 
 export function FaqCallout({ hidden }: { hidden: boolean }) {
   const [open, setOpen] = useState(false);

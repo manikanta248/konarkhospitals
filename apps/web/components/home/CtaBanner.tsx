@@ -14,7 +14,7 @@ export function CtaBanner() {
                 Need to see a specialist?
               </h2>
               <p className="mt-2 text-[14.5px] text-brand-50">
-                Book an appointment online or call us directly — our care coordinators will
+                Book an appointment online or call us directly. Our care coordinators will
                 help you find the right doctor.
               </p>
             </div>

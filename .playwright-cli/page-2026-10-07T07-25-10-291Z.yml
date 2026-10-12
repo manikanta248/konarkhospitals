@@ -1,0 +1,171 @@
+- generic [active] [ref=f13e1]:
+  - banner [ref=f13e2]:
+    - generic [ref=f13e4]:
+      - generic [ref=f13e5]:
+        - generic [ref=f13e6]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f13e10]: reception@konarkhospitals.com
+      - generic [ref=f13e14]:
+        - navigation [ref=f13e15]:
+          - link "Careers" [ref=f13e16] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f13e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f13e18] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+        - 'link "Emergency: +91 98496 61515" [ref=f13e19] [cursor=pointer]':
+          - /url: tel:+919849661515
+    - generic [ref=f13e21]:
+      - link [ref=f13e22] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f13e23]
+      - navigation [ref=f13e24]:
+        - link "Medical Services" [ref=f13e26] [cursor=pointer]:
+          - /url: /services
+        - link "Doctors" [ref=f13e30] [cursor=pointer]:
+          - /url: /doctors
+        - link "Patient Care" [ref=f13e34] [cursor=pointer]:
+          - /url: /patient-care
+        - link "About" [ref=f13e38] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=f13e42] [cursor=pointer]:
+          - /url: /resources/article
+      - generic [ref=f13e45]:
+        - link "+91 40 3526 1515" [ref=f13e46] [cursor=pointer]:
+          - /url: tel:+914035261515
+        - link "Book Appointment" [ref=f13e49] [cursor=pointer]:
+          - /url: /book-appointment
+  - main [ref=f13e50]:
+    - generic [ref=f13e52]:
+      - navigation [ref=f13e53]:
+        - link "Home" [ref=f13e54] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f13e55]: Book Appointment
+      - paragraph [ref=f13e59]: Patient Acquisition
+      - heading "Book an Appointment" [level=1] [ref=f13e60]
+      - paragraph [ref=f13e61]: Fill in a few details and our care coordinators will call you back to confirm your appointment.
+    - generic [ref=f13e62]:
+      - generic [ref=f13e64]:
+        - generic [ref=f13e65]: General Appointment
+        - generic [ref=f13e66]:
+          - generic [ref=f13e67]:
+            - generic [ref=f13e68]: Full Name *
+            - textbox "Patient's name" [ref=f13e69]
+          - generic [ref=f13e70]:
+            - generic [ref=f13e71]: Phone Number *
+            - textbox "Enter a valid 10-digit mobile number" [ref=f13e73]:
+              - /placeholder: 10-digit mobile number
+        - generic [ref=f13e74]:
+          - generic [ref=f13e75]: Email
+          - textbox "you@example.com" [ref=f13e76]
+        - generic [ref=f13e77]:
+          - generic [ref=f13e78]:
+            - generic [ref=f13e79]: Department
+            - combobox [ref=f13e80]:
+              - option "Select a department" [selected]
+              - option "Fertility & IVF"
+              - option "Gynecology & Obstetrics"
+              - option "Paediatrics & Neonatology"
+              - option "General Medicine"
+              - option "Urology"
+              - option "Orthopaedics"
+              - option "Cardiology"
+              - option "Neurology"
+              - option "Pulmonology"
+              - option "Plastic Surgery & Cosmetology"
+              - option "ENT"
+              - option "Physiotherapy"
+              - option "Vascular & Endovascular Surgery"
+          - generic [ref=f13e81]:
+            - generic [ref=f13e82]: Preferred Doctor
+            - combobox [ref=f13e83]:
+              - option "No preference" [selected]
+              - option "Dr. T. Rajani Ashok"
+              - option "Dr. D.V. Srinivas"
+              - option "Dr. Sakina Kousar"
+              - option "Dr. Deepak"
+              - option "Dr. P. Ramesh"
+              - option "Dr. Shashikanth"
+              - option "Dr. B. Murali Mohan"
+              - option "Dr. C. Chandra Sekar"
+              - option "Dr. G. Ramcharan"
+              - option "Dr. N. Satish Kumar"
+              - option "Dr. Venkat Ram Reddy"
+        - generic [ref=f13e84]:
+          - generic [ref=f13e85]:
+            - generic [ref=f13e86]: Preferred Date
+            - textbox [ref=f13e87]
+          - generic [ref=f13e88]:
+            - generic [ref=f13e89]: Preferred Time
+            - combobox [ref=f13e90]:
+              - option "Any time" [selected]
+              - option "Morning (11 AM – 3 PM)"
+              - option "Evening (6 PM – 9 PM)"
+        - generic [ref=f13e91]:
+          - generic [ref=f13e92]: Message
+          - textbox "Briefly describe your symptoms or reason for visit (optional)" [ref=f13e93]
+        - button "Request Appointment" [ref=f13e94] [cursor=pointer]
+      - complementary [ref=f13e95]:
+        - link [ref=f13e96] [cursor=pointer]:
+          - /url: tel:+919849661515
+          - generic [ref=f13e102]:
+            - paragraph [ref=f13e103]: Medical emergency?
+            - paragraph [ref=f13e104]: +91 98496 61515
+        - generic [ref=f13e105]:
+          - generic [ref=f13e110]:
+            - paragraph [ref=f13e111]: OPD Hours
+            - paragraph [ref=f13e112]: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM
+          - generic [ref=f13e116]:
+            - paragraph [ref=f13e117]: Prefer to call?
+            - link "+91 40 3526 1515" [ref=f13e118] [cursor=pointer]:
+              - /url: tel:+914035261515
+  - contentinfo [ref=f13e119]:
+    - generic [ref=f13e120]:
+      - generic [ref=f13e121]:
+        - generic [ref=f13e122]:
+          - link [ref=f13e123] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f13e124]
+          - paragraph [ref=f13e125]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f13e126] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f13e130]:
+          - heading "Quick Links" [level=4] [ref=f13e131]
+          - list [ref=f13e132]:
+            - listitem [ref=f13e133]:
+              - link "Medical Services" [ref=f13e134] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f13e135]:
+              - link "Find a Doctor" [ref=f13e136] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f13e137]:
+              - link "Patient Care" [ref=f13e138] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f13e139]:
+              - link "About Us" [ref=f13e140] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f13e141]:
+              - link "Careers" [ref=f13e142] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f13e143]:
+              - link "Contact Us" [ref=f13e144] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f13e145]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f13e146]:
+          - heading "Get in Touch" [level=4] [ref=f13e147]
+          - generic [ref=f13e148]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f13e149] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f13e154] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f13e155]
+          - generic [ref=f13e156]:
+            - link "+91 40 3526 1515" [ref=f13e157] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f13e161] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f13e166]:
+        - paragraph [ref=f13e167]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f13e168]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - alert [ref=f13e169]
+  - button "Frequently asked questions" [ref=f13e170] [cursor=pointer]: FAQs
+  - button "Chat with Konark Hospitals" [ref=f13e174] [cursor=pointer]

@@ -7,7 +7,7 @@ export const HOSPITAL = {
   mobile: "+91 98496 61515",
   emergency: "+91 98496 61515",
   whatsapp: "919849661515",
-  email: "konark.reception@gmail.com",
+  email: "reception@konarkhospitals.com",
   opdHours: "10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM",
   emergencyHours: "Open 24/7",
   mapsUrl: "https://maps.app.goo.gl/kXWTy8tzbW5tcXso7",

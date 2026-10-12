@@ -1,7 +1,10 @@
+import { HOSPITAL } from "@konark/shared";
+
 export interface NavLink {
   label: string;
   href: string;
   description?: string;
+  external?: boolean;
 }
 
 export interface NavGroup {
@@ -42,6 +45,7 @@ export const NAV: NavGroup[] = [
     label: "Patient Care",
     href: "/patient-care",
     links: [
+      { label: "Emergency Care", href: "/emergency-care" },
       { label: "Insurance & TPA", href: "/patient-care/insurance-tpa" },
       { label: "Medical Records", href: "/patient-care/medical-records" },
       { label: "Patient Guide", href: "/patient-care/patient-guide" },
@@ -76,5 +80,5 @@ export const NAV: NavGroup[] = [
 export const UTILITY_LINKS: NavLink[] = [
   { label: "Careers", href: "/careers" },
   { label: "Contact Us", href: "/contact" },
-  { label: "Locations", href: "/locations" },
+  { label: "Location", href: HOSPITAL.mapsUrl, external: true },
 ];

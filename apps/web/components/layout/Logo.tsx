@@ -7,8 +7,8 @@ export function Logo({ className }: { className?: string }) {
       <Image
         src="/images/brand/konark-logo-transparent.png"
         alt="Konark Hospitals"
-        width={225}
-        height={225}
+        width={900}
+        height={900}
         priority
         className={className ?? "h-[76px] w-auto object-contain"}
       />

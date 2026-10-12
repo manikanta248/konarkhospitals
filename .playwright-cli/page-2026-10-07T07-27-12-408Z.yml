@@ -1,0 +1,16 @@
+- generic [active] [ref=f18e1]:
+  - generic [ref=f18e3]:
+    - link [ref=f18e5] [cursor=pointer]:
+      - /url: /
+      - img "Konark Hospitals" [ref=f18e6]
+    - heading "Admin Sign In" [level=1] [ref=f18e7]
+    - paragraph [ref=f18e8]: Staff access only
+    - generic [ref=f18e9]:
+      - generic [ref=f18e10]:
+        - generic [ref=f18e11]: Email
+        - textbox "you@konarkhospitals.com" [ref=f18e12]: admin@konarkhospitals.com
+      - generic [ref=f18e13]:
+        - generic [ref=f18e14]: Password
+        - textbox "••••••••" [ref=f18e15]: KonarkAdmin2026
+      - button "Signing in..." [disabled] [ref=f18e21]
+  - alert [ref=f18e20]

@@ -1,18 +1,20 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 import { api } from "@/lib/api";
 import { Button } from "@/components/ui/Button";
 import { PhoneInput } from "@/components/forms/PhoneInput";
 import { HOSPITAL } from "@konark/shared";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "error";
 
 const inputClass =
   "h-11 w-full rounded-lg border border-ink-200 bg-white px-3.5 text-sm text-ink-800 placeholder:text-ink-400 focus:border-brand-400 focus:outline-none focus:ring-2 focus:ring-brand-100";
 
 export function ContactForm() {
+  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -29,23 +31,10 @@ export function ContactForm() {
         subject: data.get("subject"),
         message: data.get("message"),
       });
-      setStatus("success");
-      form.reset();
+      router.push("/thank-you");
     } catch {
       setStatus("error");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="flex flex-col items-center gap-3 rounded-xl2 border border-brand-100 bg-brand-50/60 py-12 text-center">
-        <CheckCircle2 size={32} className="text-brand-600" />
-        <p className="text-[15px] font-semibold text-ink-900">Message sent</p>
-        <p className="max-w-xs text-sm text-ink-600">
-          Thank you for reaching out — our team will get back to you shortly.
-        </p>
-      </div>
-    );
   }
 
   return (

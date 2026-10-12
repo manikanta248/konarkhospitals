@@ -76,6 +76,16 @@ export interface Testimonial {
   createdAt?: string;
 }
 
+export interface TestimonialVideo {
+  id: string;
+  patientName?: string;
+  posterUrl: string;
+  videoUrl: string;
+  order?: number;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
 export interface HealthPackage {
   id: string;
   slug: string;

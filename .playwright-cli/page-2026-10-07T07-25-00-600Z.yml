@@ -1,0 +1,126 @@
+- generic [active] [ref=f8e1]:
+  - banner [ref=f8e2]:
+    - generic [ref=f8e4]:
+      - generic [ref=f8e5]:
+        - generic [ref=f8e6]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f8e10]: reception@konarkhospitals.com
+      - generic [ref=f8e14]:
+        - navigation [ref=f8e15]:
+          - link "Careers" [ref=f8e16] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f8e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f8e18] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+        - 'link "Emergency: +91 98496 61515" [ref=f8e19] [cursor=pointer]':
+          - /url: tel:+919849661515
+    - generic [ref=f8e21]:
+      - link [ref=f8e22] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f8e23]
+      - navigation [ref=f8e24]:
+        - link "Medical Services" [ref=f8e26] [cursor=pointer]:
+          - /url: /services
+        - link "Doctors" [ref=f8e30] [cursor=pointer]:
+          - /url: /doctors
+        - link "Patient Care" [ref=f8e34] [cursor=pointer]:
+          - /url: /patient-care
+        - link "About" [ref=f8e38] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=f8e42] [cursor=pointer]:
+          - /url: /resources/article
+      - generic [ref=f8e45]:
+        - link "+91 40 3526 1515" [ref=f8e46] [cursor=pointer]:
+          - /url: tel:+914035261515
+        - link "Book Appointment" [ref=f8e49] [cursor=pointer]:
+          - /url: /book-appointment
+  - main [ref=f8e50]:
+    - generic [ref=f8e52]:
+      - img "Dr. T. Rajani Ashok" [ref=f8e54]
+      - generic [ref=f8e55]:
+        - generic [ref=f8e56]: Fertility & IVF
+        - heading "Dr. T. Rajani Ashok" [level=1] [ref=f8e57]
+        - paragraph [ref=f8e58]: Senior Fertility Specialist
+        - generic [ref=f8e59]:
+          - generic [ref=f8e60]:
+            - term [ref=f8e61]: Qualifications
+            - definition [ref=f8e65]: MD (Obs & Gynae)
+          - generic [ref=f8e66]:
+            - term [ref=f8e67]: Specialization
+            - definition [ref=f8e72]: Fertility, IVF & High-risk Obstetrics
+          - generic [ref=f8e73]:
+            - term [ref=f8e74]: Experience
+            - definition [ref=f8e79]: 30+ years
+          - generic [ref=f8e80]:
+            - term [ref=f8e81]: Languages
+            - definition [ref=f8e87]: English, Telugu, Hindi
+        - generic [ref=f8e88]:
+          - link "Book Consultation" [ref=f8e89] [cursor=pointer]:
+            - /url: /book-appointment?doctor=dr-t-rajani-ashok
+          - link "Ask a Question" [ref=f8e90] [cursor=pointer]:
+            - /url: /contact
+    - generic [ref=f8e91]:
+      - generic [ref=f8e92]:
+        - heading "About Dr. T. Rajani Ashok" [level=2] [ref=f8e93]
+        - paragraph [ref=f8e94]: Dr. T. Rajani Ashok brings close to three decades of experience in obstetrics, gynaecology and fertility care, and has led some of Konark Hospitals' most complex deliveries and fertility treatments.
+      - complementary [ref=f8e95]:
+        - heading "OPD Availability" [level=3] [ref=f8e96]
+        - list [ref=f8e97]:
+          - listitem [ref=f8e98]:
+            - generic [ref=f8e99]: Mon - Sat
+            - generic [ref=f8e100]: 11:00 AM - 3:00 PM
+          - listitem [ref=f8e101]:
+            - generic [ref=f8e102]: Mon - Sat
+            - generic [ref=f8e103]: 6:00 PM - 9:00 PM
+        - paragraph [ref=f8e104]: Timings may vary — please book ahead to confirm availability.
+  - contentinfo [ref=f8e105]:
+    - generic [ref=f8e106]:
+      - generic [ref=f8e107]:
+        - generic [ref=f8e108]:
+          - link [ref=f8e109] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f8e110]
+          - paragraph [ref=f8e111]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f8e112] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f8e116]:
+          - heading "Quick Links" [level=4] [ref=f8e117]
+          - list [ref=f8e118]:
+            - listitem [ref=f8e119]:
+              - link "Medical Services" [ref=f8e120] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f8e121]:
+              - link "Find a Doctor" [ref=f8e122] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f8e123]:
+              - link "Patient Care" [ref=f8e124] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f8e125]:
+              - link "About Us" [ref=f8e126] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f8e127]:
+              - link "Careers" [ref=f8e128] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f8e129]:
+              - link "Contact Us" [ref=f8e130] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f8e131]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f8e132]:
+          - heading "Get in Touch" [level=4] [ref=f8e133]
+          - generic [ref=f8e134]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f8e135] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f8e140] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f8e141]
+          - generic [ref=f8e142]:
+            - link "+91 40 3526 1515" [ref=f8e143] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f8e147] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f8e152]:
+        - paragraph [ref=f8e153]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f8e154]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - alert [ref=f8e155]
+  - button "Frequently asked questions" [ref=f8e156] [cursor=pointer]: FAQs
+  - button "Chat with Konark Hospitals" [ref=f8e160] [cursor=pointer]

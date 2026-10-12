@@ -1,0 +1,196 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - generic [ref=f2e6]: "OPD: 10:00 AM – 3:00 PM & 6:00 PM – 8:00 PM"
+        - generic [ref=f2e10]: reception@konarkhospitals.com
+      - generic [ref=f2e14]:
+        - navigation [ref=f2e15]:
+          - link "Careers" [ref=f2e16] [cursor=pointer]:
+            - /url: /careers
+          - link "Contact Us" [ref=f2e17] [cursor=pointer]:
+            - /url: /contact
+          - link "Location" [ref=f2e18] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+        - 'link "Emergency: +91 98496 61515" [ref=f2e19] [cursor=pointer]':
+          - /url: tel:+919849661515
+    - generic [ref=f2e21]:
+      - link [ref=f2e22] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f2e23]
+      - navigation [ref=f2e24]:
+        - link "Medical Services" [ref=f2e26] [cursor=pointer]:
+          - /url: /services
+        - link "Doctors" [ref=f2e30] [cursor=pointer]:
+          - /url: /doctors
+        - link "Patient Care" [ref=f2e34] [cursor=pointer]:
+          - /url: /patient-care
+        - link "About" [ref=f2e38] [cursor=pointer]:
+          - /url: /about
+        - link "Resources" [ref=f2e42] [cursor=pointer]:
+          - /url: /resources/article
+      - generic [ref=f2e45]:
+        - link "+91 40 3526 1515" [ref=f2e46] [cursor=pointer]:
+          - /url: tel:+914035261515
+        - link "Book Appointment" [ref=f2e49] [cursor=pointer]:
+          - /url: /book-appointment
+  - main [ref=f2e50]:
+    - generic [ref=f2e52]:
+      - navigation [ref=f2e53]:
+        - link "Home" [ref=f2e54] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e55]: Medical Services
+      - paragraph [ref=f2e59]: Specialities
+      - heading "Medical Services We Offer" [level=1] [ref=f2e60]
+      - paragraph [ref=f2e61]: 13+ specialities backed by dedicated consultants, modern diagnostics and dedicated care — all under one roof at Konark Hospitals.
+    - generic [ref=f2e63]:
+      - link [ref=f2e64] [cursor=pointer]:
+        - /url: /services/fertility-ivf
+        - img "Fertility & IVF" [ref=f2e66]
+        - generic [ref=f2e67]:
+          - heading "Fertility & IVF" [level=3] [ref=f2e69]
+          - paragraph [ref=f2e70]: Advanced fertility treatments including IVF and IUI by our most experienced specialist.
+          - generic [ref=f2e71]: Explore department
+      - link [ref=f2e75] [cursor=pointer]:
+        - /url: /services/gynecology
+        - img "Gynecology & Obstetrics" [ref=f2e77]
+        - generic [ref=f2e78]:
+          - heading "Gynecology & Obstetrics" [level=3] [ref=f2e80]
+          - paragraph [ref=f2e81]: Complete women's health care from pregnancy through every life stage.
+          - generic [ref=f2e82]: Explore department
+      - link [ref=f2e86] [cursor=pointer]:
+        - /url: /services/paediatrics
+        - img "Paediatrics & Neonatology" [ref=f2e88]
+        - generic [ref=f2e89]:
+          - heading "Paediatrics & Neonatology" [level=3] [ref=f2e91]
+          - paragraph [ref=f2e92]: Specialised care for newborns, infants and children.
+          - generic [ref=f2e93]: Explore department
+      - link "General Medicine General Medicine OPD Only Outpatient consultation and management of everyday illness and chronic conditions. Explore department" [ref=f2e97] [cursor=pointer]:
+        - /url: /services/general-medicine
+        - img "General Medicine" [ref=f2e99]
+        - generic [ref=f2e100]:
+          - generic [ref=f2e101]:
+            - heading "General Medicine" [level=3] [ref=f2e102]
+            - generic [ref=f2e103]: OPD Only
+          - paragraph [ref=f2e104]: Outpatient consultation and management of everyday illness and chronic conditions.
+          - generic [ref=f2e105]: Explore department
+      - link [ref=f2e109] [cursor=pointer]:
+        - /url: /services/urology
+        - img "Urology" [ref=f2e111]
+        - generic [ref=f2e112]:
+          - heading "Urology" [level=3] [ref=f2e114]
+          - paragraph [ref=f2e115]: Diagnosis and treatment of urinary tract and male reproductive conditions.
+          - generic [ref=f2e116]: Explore department
+      - link [ref=f2e120] [cursor=pointer]:
+        - /url: /services/orthopaedics
+        - img "Orthopaedics" [ref=f2e122]
+        - generic [ref=f2e123]:
+          - heading "Orthopaedics" [level=3] [ref=f2e125]
+          - paragraph [ref=f2e126]: Trauma care, joint replacement and sports injury treatment by experienced surgeons.
+          - generic [ref=f2e127]: Explore department
+      - link "Cardiology Cardiology OPD Only Comprehensive heart care from diagnostics to advanced cardiac procedures. Explore department" [ref=f2e131] [cursor=pointer]:
+        - /url: /services/cardiology
+        - img "Cardiology" [ref=f2e133]
+        - generic [ref=f2e134]:
+          - generic [ref=f2e135]:
+            - heading "Cardiology" [level=3] [ref=f2e136]
+            - generic [ref=f2e137]: OPD Only
+          - paragraph [ref=f2e138]: Comprehensive heart care from diagnostics to advanced cardiac procedures.
+          - generic [ref=f2e139]: Explore department
+      - link "Neurology Neurology OPD Only Expert diagnosis and treatment for disorders of the brain, spine and nervous system. Explore department" [ref=f2e143] [cursor=pointer]:
+        - /url: /services/neurology
+        - img "Neurology" [ref=f2e145]
+        - generic [ref=f2e146]:
+          - generic [ref=f2e147]:
+            - heading "Neurology" [level=3] [ref=f2e148]
+            - generic [ref=f2e149]: OPD Only
+          - paragraph [ref=f2e150]: Expert diagnosis and treatment for disorders of the brain, spine and nervous system.
+          - generic [ref=f2e151]: Explore department
+      - link "Pulmonology Pulmonology OPD Only Comprehensive respiratory and lung care for acute and chronic conditions. Explore department" [ref=f2e155] [cursor=pointer]:
+        - /url: /services/pulmonology
+        - img "Pulmonology" [ref=f2e157]
+        - generic [ref=f2e158]:
+          - generic [ref=f2e159]:
+            - heading "Pulmonology" [level=3] [ref=f2e160]
+            - generic [ref=f2e161]: OPD Only
+          - paragraph [ref=f2e162]: Comprehensive respiratory and lung care for acute and chronic conditions.
+          - generic [ref=f2e163]: Explore department
+      - link [ref=f2e167] [cursor=pointer]:
+        - /url: /services/plastic-surgery-cosmetology
+        - img "Plastic Surgery & Cosmetology" [ref=f2e169]
+        - generic [ref=f2e170]:
+          - heading "Plastic Surgery & Cosmetology" [level=3] [ref=f2e172]
+          - paragraph [ref=f2e173]: Reconstructive and cosmetic surgery for trauma, post-surgical and aesthetic needs.
+          - generic [ref=f2e174]: Explore department
+      - link [ref=f2e178] [cursor=pointer]:
+        - /url: /services/ent
+        - img "ENT" [ref=f2e180]
+        - generic [ref=f2e181]:
+          - heading "ENT" [level=3] [ref=f2e183]
+          - paragraph [ref=f2e184]: Diagnosis and treatment of ear, nose, throat and related head & neck conditions.
+          - generic [ref=f2e185]: Explore department
+      - link [ref=f2e189] [cursor=pointer]:
+        - /url: /services/physiotherapy
+        - img "Physiotherapy" [ref=f2e191]
+        - generic [ref=f2e192]:
+          - heading "Physiotherapy" [level=3] [ref=f2e194]
+          - paragraph [ref=f2e195]: Rehabilitation and physical therapy for post-surgical and injury recovery.
+          - generic [ref=f2e196]: Explore department
+      - link [ref=f2e200] [cursor=pointer]:
+        - /url: /services/vascular-surgery
+        - img "Vascular & Endovascular Surgery" [ref=f2e202]
+        - generic [ref=f2e203]:
+          - heading "Vascular & Endovascular Surgery" [level=3] [ref=f2e205]
+          - paragraph [ref=f2e206]: Diagnosis and surgical treatment of blood vessel conditions.
+          - generic [ref=f2e207]: Explore department
+  - contentinfo [ref=f2e211]:
+    - generic [ref=f2e212]:
+      - generic [ref=f2e213]:
+        - generic [ref=f2e214]:
+          - link [ref=f2e215] [cursor=pointer]:
+            - /url: /
+            - img "Konark Hospitals" [ref=f2e216]
+          - paragraph [ref=f2e217]: When passion meets compassion, experience the best medical practices in action.
+          - link "Konark Hospitals on Instagram" [ref=f2e218] [cursor=pointer]:
+            - /url: https://www.instagram.com/konark.hospitals
+        - generic [ref=f2e222]:
+          - heading "Quick Links" [level=4] [ref=f2e223]
+          - list [ref=f2e224]:
+            - listitem [ref=f2e225]:
+              - link "Medical Services" [ref=f2e226] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f2e227]:
+              - link "Find a Doctor" [ref=f2e228] [cursor=pointer]:
+                - /url: /doctors
+            - listitem [ref=f2e229]:
+              - link "Patient Care" [ref=f2e230] [cursor=pointer]:
+                - /url: /patient-care
+            - listitem [ref=f2e231]:
+              - link "About Us" [ref=f2e232] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f2e233]:
+              - link "Careers" [ref=f2e234] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=f2e235]:
+              - link "Contact Us" [ref=f2e236] [cursor=pointer]:
+                - /url: /contact
+          - paragraph [ref=f2e237]: 5+ specialities · full sitemap in the menu above
+        - generic [ref=f2e238]:
+          - heading "Get in Touch" [level=4] [ref=f2e239]
+          - generic [ref=f2e240]:
+            - link "#13 & 14, Pipeline Road, Behind Deevan Dhaba, Petbasheerabad, Jeedimetla, Hyderabad – 500 055" [ref=f2e241] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+            - link "Open Konark Hospitals location in Google Maps" [ref=f2e246] [cursor=pointer]:
+              - /url: https://maps.app.goo.gl/kXWTy8tzbW5tcXso7
+              - iframe [ref=f2e247]
+          - generic [ref=f2e248]:
+            - link "+91 40 3526 1515" [ref=f2e249] [cursor=pointer]:
+              - /url: tel:+914035261515
+            - link "reception@konarkhospitals.com" [ref=f2e253] [cursor=pointer]:
+              - /url: mailto:reception@konarkhospitals.com
+      - generic [ref=f2e258]:
+        - paragraph [ref=f2e259]: © 2026 Konark Hospitals. All rights reserved.
+        - paragraph [ref=f2e260]: Multispeciality Hospital · Jeedimetla, Hyderabad
+  - alert [ref=f2e261]
+  - button "Frequently asked questions" [ref=f2e262] [cursor=pointer]: FAQs
+  - button "Chat with Konark Hospitals" [ref=f2e266] [cursor=pointer]

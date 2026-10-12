@@ -1,0 +1,98 @@
+- generic [active] [ref=f29e1]:
+  - generic [ref=f29e2]:
+    - complementary [ref=f29e5]:
+      - link [ref=f29e7] [cursor=pointer]:
+        - /url: /
+        - img "Konark Hospitals" [ref=f29e8]
+      - navigation [ref=f29e9]:
+        - list [ref=f29e10]:
+          - listitem [ref=f29e11]:
+            - link "Dashboard" [ref=f29e12] [cursor=pointer]:
+              - /url: /admin
+          - listitem [ref=f29e18]:
+            - link "Appointments" [ref=f29e19] [cursor=pointer]:
+              - /url: /admin/appointments
+          - listitem [ref=f29e22]:
+            - link "Contact Messages" [ref=f29e23] [cursor=pointer]:
+              - /url: /admin/messages
+          - listitem [ref=f29e27]:
+            - link "Chat Conversations" [ref=f29e28] [cursor=pointer]:
+              - /url: /admin/chat-logs
+          - listitem [ref=f29e31]:
+            - link "Chatbot" [ref=f29e32] [cursor=pointer]:
+              - /url: /admin/chatbot
+          - listitem [ref=f29e36]:
+            - link "Doctors" [ref=f29e37] [cursor=pointer]:
+              - /url: /admin/doctors
+          - listitem [ref=f29e42]:
+            - link "Departments" [ref=f29e43] [cursor=pointer]:
+              - /url: /admin/departments
+          - listitem [ref=f29e49]:
+            - link "Articles & Resources" [ref=f29e50] [cursor=pointer]:
+              - /url: /admin/articles
+          - listitem [ref=f29e54]:
+            - link "Testimonials" [ref=f29e55] [cursor=pointer]:
+              - /url: /admin/testimonials
+          - listitem [ref=f29e58]:
+            - link "Video Testimonials" [ref=f29e59] [cursor=pointer]:
+              - /url: /admin/testimonial-videos
+          - listitem [ref=f29e63]:
+            - link "Events" [ref=f29e64] [cursor=pointer]:
+              - /url: /admin/events
+          - listitem [ref=f29e67]:
+            - link "Careers" [ref=f29e68] [cursor=pointer]:
+              - /url: /admin/careers
+          - listitem [ref=f29e72]:
+            - link "Health Packages" [ref=f29e73] [cursor=pointer]:
+              - /url: /admin/health-packages
+      - generic [ref=f29e77]:
+        - paragraph [ref=f29e78]: admin@konarkhospitals.com
+        - button "Sign Out" [ref=f29e79] [cursor=pointer]
+    - main [ref=f29e83]:
+      - generic [ref=f29e281]:
+        - heading "Edit Department" [level=1] [ref=f29e283]
+        - generic [ref=f29e285]:
+          - generic [ref=f29e286]:
+            - generic [ref=f29e287]: Slug *
+            - textbox [ref=f29e288]: cardiology
+          - generic [ref=f29e289]:
+            - generic [ref=f29e290]: Name *
+            - textbox [ref=f29e291]: Cardiology
+          - generic [ref=f29e292]:
+            - generic [ref=f29e293]: Short Description
+            - textbox [ref=f29e294]: Comprehensive heart care from diagnostics to advanced cardiac procedures.
+          - generic [ref=f29e295]:
+            - generic [ref=f29e296]: Full Description
+            - textbox [ref=f29e297]: Konark Hospitals' Cardiology department delivers complete cardiac care — from routine screening and ECG/echo diagnostics to management of coronary artery disease, hypertension, arrhythmia and heart failure. Our physicians work closely with the emergency and critical care teams to ensure rapid response for cardiac emergencies.
+          - generic [ref=f29e298]:
+            - generic [ref=f29e299]: Page banner image
+            - generic [ref=f29e300]:
+              - generic [ref=f29e303]:
+                - generic [ref=f29e304]:
+                  - button "Replace file" [ref=f29e305] [cursor=pointer]
+                  - button "Remove" [ref=f29e309] [cursor=pointer]
+                - paragraph [ref=f29e313]: Wide landscape photo works best, up to 10 MB.
+                - button [aria-hidden] [ref=f29e314]
+              - generic [ref=f29e315]:
+                - generic [ref=f29e316]: Or paste a link
+                - textbox "Or paste a link" [ref=f29e317]: /images/departments/cardiology.jpg
+          - generic [ref=f29e318]:
+            - generic [ref=f29e319]: Servicescomma-separated
+            - textbox [ref=f29e320]: ECG & Echocardiography, Cardiac Risk Screening, Hypertension Management, Arrhythmia Care, Post-cardiac Rehabilitation
+          - generic [ref=f29e321]:
+            - generic [ref=f29e322]: Conditions Treatedcomma-separated
+            - textbox [ref=f29e323]: Coronary Artery Disease, Hypertension, Arrhythmia, Heart Failure, Angina
+          - generic [ref=f29e324]:
+            - generic [ref=f29e325]: Procedurescomma-separated
+            - textbox [ref=f29e326]: ECG, 2D Echo, TMT (Treadmill Test), Holter Monitoring
+          - generic [ref=f29e327]:
+            - generic [ref=f29e328]: "FAQs[{\"question\":\"...\",\"answer\":\"...\"}]"
+            - textbox [ref=f29e329]: "[ { \"question\": \"When should I get a cardiac screening done?\", \"answer\": \"We recommend a baseline screening from age 30 onward, or earlier if you have a family history of heart disease, diabetes, or hypertension.\" } ]"
+          - generic [ref=f29e330]:
+            - generic [ref=f29e331]: Display Order
+            - spinbutton [ref=f29e332]: "7"
+          - generic [ref=f29e333]:
+            - button "Save Changes" [ref=f29e334] [cursor=pointer]
+            - link "Cancel" [ref=f29e335] [cursor=pointer]:
+              - /url: /admin/departments
+  - alert [ref=f29e280]

@@ -13,17 +13,18 @@ export function QuickActions() {
   return (
     <div className="relative z-10 -mt-1 lg:-mt-8">
       <Container>
-        <div className="flex gap-3 overflow-x-auto pb-1 lg:grid lg:grid-cols-4 lg:gap-4 lg:overflow-visible lg:rounded-xl2 lg:border lg:border-ink-100 lg:bg-white lg:p-2 lg:shadow-card">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-5 lg:rounded-xl2 lg:border lg:border-ink-100 lg:bg-white lg:p-3 lg:shadow-card">
           {actions.map(({ label, href, icon: Icon, tone }) => (
             <Link
               key={href}
               href={href}
-              className="flex min-w-[150px] shrink-0 items-center gap-3 rounded-xl border border-ink-100 bg-white p-3.5 shadow-card transition-shadow hover:shadow-floating lg:min-w-0 lg:border-none lg:shadow-none lg:hover:bg-ink-50"
+              className="flex items-center gap-3 rounded-xl border border-ink-100 bg-white p-3.5 shadow-card transition-shadow hover:shadow-floating sm:gap-3.5 sm:p-4 lg:border-none lg:p-3.5 lg:shadow-none lg:hover:bg-ink-50"
             >
-              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${tone} text-white`}>
-                <Icon size={18} />
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${tone} text-white sm:h-12 sm:w-12`}>
+                <Icon size={18} className="sm:hidden" />
+                <Icon size={21} className="hidden sm:block" />
               </span>
-              <span className="text-[13.5px] font-semibold leading-tight text-ink-800">{label}</span>
+              <span className="text-[13px] font-semibold leading-tight text-ink-800 sm:text-[15px]">{label}</span>
             </Link>
           ))}
         </div>

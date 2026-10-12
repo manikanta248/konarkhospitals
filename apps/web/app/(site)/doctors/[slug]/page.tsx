@@ -5,14 +5,17 @@ import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
 import { DoctorImage } from "@/components/ui/DoctorImage";
 import { DoctorCard } from "@/components/doctors/DoctorCard";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/seo-keywords";
 import { getDoctor, getDoctors } from "@/lib/content";
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const doctor = await getDoctor(params.slug);
   if (!doctor) return {};
   return {
-    title: doctor.name,
-    description: `${doctor.designation} at Konark Hospitals — ${doctor.specialization}. ${doctor.experienceYears}+ years of experience.`,
+    title: `${doctor.name} — ${doctor.specialization} in Hyderabad`,
+    description: `${doctor.designation} at Konark Hospitals, Jeedimetla — ${doctor.specialization}, ${doctor.experienceYears}+ years of experience. Book a consultation online.`,
+    alternates: { canonical: `/doctors/${params.slug}` },
   };
 }
 
@@ -22,8 +25,21 @@ export default async function DoctorProfilePage({ params }: { params: { slug: st
 
   const related = allDoctors.filter((d) => d.departmentSlug === doctor.departmentSlug && d.slug !== doctor.slug).slice(0, 3);
 
+  const physicianJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    name: doctor.name,
+    url: `${SITE_URL}/doctors/${doctor.slug}`,
+    image: doctor.photo ? `${SITE_URL}${doctor.photo}` : undefined,
+    jobTitle: doctor.designation,
+    medicalSpecialty: doctor.specialization,
+    worksFor: { "@type": "Hospital", name: "Konark Hospitals", url: SITE_URL },
+    alumniOf: doctor.qualifications,
+  };
+
   return (
     <>
+      <JsonLd data={physicianJsonLd} />
       <div className="border-b border-ink-100 bg-gradient-to-b from-brand-50/60 to-white py-10 sm:py-12">
         <Container className="grid gap-8 sm:grid-cols-[220px_1fr] sm:gap-10 lg:grid-cols-[260px_1fr]">
           <DoctorImage
